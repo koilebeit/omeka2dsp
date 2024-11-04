@@ -1,8 +1,8 @@
 contact_links:
-  - name: Are you looking for documentation on REPO_NAME?
-    url: https://USERNAME.github.io/REPO_NAME
-    about: Please see the documentation for REPO_NAME on its GitHub Pages page.
-  - name: Do want to discuss REPO_NAME with the community?
-    url: https://github.com/USERNAME/REPO_NAME/discussions
-    about: Please see the discussions page for REPO_NAME.
+  - name: Are you looking for documentation on sgb_data?
+    url: https://koilebeit.github.io/sgb_data
+    about: Please see the documentation for sgb_data on its GitHub Pages page.
+  - name: Do want to discuss sgb_data with the community?
+    url: https://github.com/koilebeit/sgb_data/discussions
+    about: Please see the discussions page for sgb_data.
 blank_issues_enabled: true

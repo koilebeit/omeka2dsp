@@ -1,9 +1,9 @@
 {
-	"name": "REPO_NAME",
-	"description": "SHORT_DESCRIPTION",
-	"author": "FULLNAME <[INSERT CONTACT METHOD]>",
+	"name": "SGB Research Data",
+	"description": "This repository contains files and workflows for the quality control and archiving of the research data of Stadt.Geschichte.Basel",
+	"author": "Nico Görlich",
 	"version": "0.0.1",
-	"url": "https://github.com/USERNAME/REPO_NAME/issues",
+	"url": "https://github.com/koilebeit/sgb_data/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"check": "prettier --ignore-path .gitignore --check . '!{CODE_OF_CONDUCT.md,LICENSE.md,_layouts/default.html}'",
