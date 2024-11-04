@@ -1,5 +1,5 @@
 {
-	"name": "SGB Research Data",
+	"name": "sgb_data",
 	"description": "This repository contains files and workflows for the quality control and archiving of the research data of Stadt.Geschichte.Basel",
 	"author": "Nico Görlich",
 	"version": "0.0.1",

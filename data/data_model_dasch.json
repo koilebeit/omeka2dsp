@@ -1,0 +1,882 @@
+{
+	"prefixes": {
+		"sgb": "https://api.rdu-13.dasch.swiss/ontology/0856/DataModelSGB/v2"
+	},
+	"$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-tools/main/src/dsp_tools/resources/schema/project.json",
+	"project": {
+		"shortcode": "0856",
+		"shortname": "stadtgeschichtebasel",
+		"longname": "Stadt.Geschichte.Basel",
+		"descriptions": {
+			"en": "This repository contains a collection of resources on the history of the city of Basel. It provides direct access to reusable sources and data from various volumes of the city's history. Further information on the data and the data model can be found at https://forschung.stadtgeschichtebasel.ch/.",
+			"de": "Dieses Repositorium beinhaltet eine Sammlung an Ressourcen zur Geschichte der Stadt Basel. Sie ermöglicht direkten Zugang zu nachnutzbaren Quellen und Daten aus verschiedenen Bänden der Stadtgeschichte. Weitere Informationen zu den Daten und zum Datenmodell sind unter https://forschung.stadtgeschichtebasel.ch/ zu finden."
+		},
+		"keywords": ["Basel", "Geschichte", "Stadtgeschichte"],
+		"groups": [],
+		"users": [
+			{
+				"username": "mtwente",
+				"email": "moritz.twente@unibas.ch",
+				"givenName": "Moritz",
+				"familyName": "Twente",
+				"password": "",
+				"lang": "de",
+				"groups": [],
+				"projects": ["stadtgeschichtebasel:admin"],
+				"status": true
+			},
+			{
+				"username": "mmaehr",
+				"email": "moritz.maehr@unibas.ch",
+				"givenName": "Moritz",
+				"familyName": "Mähr",
+				"password": "",
+				"lang": "de",
+				"groups": ["stadtgeschichtebasel:rosetta-editors"],
+				"projects": ["stadtgeschichtebasel:admin"],
+				"status": true
+			},
+			{
+				"username": "ngoerlich",
+				"email": "nico.goerlich@unibas.ch",
+				"givenName": "Nico",
+				"familyName": "Görlich",
+				"password": "",
+				"lang": "de",
+				"groups": [],
+				"projects": ["stadtgeschichtebasel:admin"],
+				"status": true
+			}
+		],
+		"lists": [
+			{
+				"name": "7LxuYWDpSWW23p9K1P-fDQ",
+				"labels": {
+					"en": "DCMI Type Vocabulary",
+					"de": "DCMI Typ"
+				},
+				"comments": {
+					"en": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"
+				},
+				"nodes": [
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-nbm8aomo8sd24p22amnarc",
+						"labels": {
+							"en": "Collection"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-e51n2azg89eix6fbh9k7z",
+						"labels": {
+							"en": "Dataset"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-9hlh5br4k48l4hydxcfes",
+						"labels": {
+							"en": "Event"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-g73j7iqt3jh9yqv698vb4l",
+						"labels": {
+							"en": "Image"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-wpaiujbkucl85q9dcqf5",
+						"labels": {
+							"en": "InteractiveResource"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-jdshndf8cja34wnrqyjf6",
+						"labels": {
+							"en": "MovingImage"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-3hd3td4emtbzi6ag94wzye",
+						"labels": {
+							"en": "PhysicalObject"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-zb0yo98tsjjecz6zpa1ymp",
+						"labels": {
+							"en": "Service"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-c6jiszxojj46gd9ur18z",
+						"labels": {
+							"en": "Software"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-nig9hmu37tpaahff0ztjm8",
+						"labels": {
+							"en": "Sound"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-n509khrp49b37nhfbqlu8n",
+						"labels": {
+							"en": "StillImage"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-456kflb4l8oe66irj7aunv",
+						"labels": {
+							"en": "Text"
+						}
+					}
+				]
+			},
+			{
+				"name": "LIFmqIL2SIijo-c-yqXA6Q",
+				"labels": {
+					"de": "Internet Media Type"
+				},
+				"comments": {
+					"de": "Internet Media Type"
+				},
+				"nodes": [
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-rfvwcrt6f26ej9q1bcbwr",
+						"labels": {
+							"en": "application/geo+json"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-e29gqeach4lrx9z3asaijr",
+						"labels": {
+							"en": "application/pdf"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-ts2y949499syqy04etcgn",
+						"labels": {
+							"en": "image/jpeg"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-sachtb1uwvytiveamz4c",
+						"labels": {
+							"en": "image/png"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-run1tklw2l701ajojor2a",
+						"labels": {
+							"en": "image/svg+xml"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-p1y2stp72ibhnwai4pfhr",
+						"labels": {
+							"en": "image/tiff"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-m4denukubul6uuzgtrvhb7",
+						"labels": {
+							"en": "image/bmp"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-jnoootljx79vf1r70vkgv",
+						"labels": {
+							"en": "image/emf"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-y7a7j1gx0srn3uxh9n3no",
+						"labels": {
+							"en": "image/wmf"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-u4el3kg26g2u7dw0kyn68",
+						"labels": {
+							"en": "image/gif"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-9z3izbeyytrnz2c4jkmlq",
+						"labels": {
+							"en": "image/webp"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-0qr2xfvmvk4lmgev9vcnwim",
+						"labels": {
+							"en": "image/avif"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-q6dgz57hz5j28motz1i3yv",
+						"labels": {
+							"en": "image/heic"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-y9968rfdmvd4f9lyjgw6zs",
+						"labels": {
+							"en": "image/heif"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-d5ks2ne44ikzgu7pnz36t",
+						"labels": {
+							"en": "text/csv"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-g8qygdkk54f1r47xhja05c",
+						"labels": {
+							"en": "text/markdown"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-6e61wxti4g5itb5g8ybce",
+						"labels": {
+							"en": "text/plain"
+						}
+					}
+				]
+			},
+			{
+				"name": "fecjPbTITdqyj9YMn473Iw",
+				"labels": {
+					"de": "Thema"
+				},
+				"comments": {
+					"en": "Subject",
+					"de": "Thema"
+				},
+				"nodes": [
+					{
+						"name": "QvzeDtq2QI-PBcvb0WExTQ-3hlfh43qar4ve9nofmfh1",
+						"labels": {
+							"de": "testthema"
+						}
+					}
+				]
+			},
+			{
+				"name": "EUn9MrlKRYSFWF7calHR8w",
+				"labels": {
+					"en": "Era",
+					"de": "Epoche"
+				},
+				"comments": {
+					"de": "Vokabular für Epochen"
+				},
+				"nodes": [
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-982fugjoh76hq9f2640lc",
+						"labels": {
+							"de": "Frühgeschichte"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-9szqufor5g6plrnti8lqp",
+						"labels": {
+							"de": "Antike"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-7m2lfhszqnjj8efb5o3s9q",
+						"labels": {
+							"de": "Mittelalter"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-e3wh6qla4qqsajvfjuq7k",
+						"labels": {
+							"de": "Frühe Neuzeit"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-i77mpa9of6r4mgf7epo1hk",
+						"labels": {
+							"de": "19. Jahrhundert"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-3hlfh43qar4ve9nofmfh1",
+						"labels": {
+							"de": "20. Jahrhundert"
+						}
+					},
+					{
+						"name": "_juiVgUERkyoNQvY6o9Pag-gzsumxj56lnrivbnswvv8",
+						"labels": {
+							"de": "21. Jahrhundert"
+						}
+					}
+				]
+			}
+		],
+		"ontologies": [
+			{
+				"name": "StadtGeschichteBasel_v1",
+				"label": "Stadt.Geschichte.Basel-v1",
+				"properties": [
+					{
+						"name": "creator",
+						"super": ["hasValue", "http://purl.org/dc/terms/creator"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Ersteller*innen"
+						},
+						"comments": {
+							"de": "Alle Entitäten (Autor*innen), die in erster Linie für die Erstellung der Ressource verantwortlich sind.\nKlarname und URL zu Wikidata.org"
+						},
+						"gui_element": "Richtext"
+					},
+					{
+						"name": "creator_as_text",
+						"super": ["hasValue", "http://purl.org/dc/terms/creator"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Ersteller*in (Text)"
+						},
+						"comments": {
+							"de": "Eine Entität (Autor*in), die in erster Linie für die Erstellung der Ressource verantwortlich ist.\nKlarname"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "creator_as_url",
+						"super": ["hasValue", "http://purl.org/dc/terms/creator"],
+						"object": "UriValue",
+						"labels": {
+							"de": "Ersteller*in (URL)"
+						},
+						"comments": {
+							"de": "Eine Entität (Autor*in), die in erster Linie für die Erstellung der Ressource verantwortlich ist.\nURL zu Wikidata.org"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "date",
+						"super": ["hasValue", "http://purl.org/dc/terms/date"],
+						"object": "TextValue",
+						"labels": {
+							"de": "date"
+						},
+						"comments": {
+							"de": "Der Zeitpunkt oder Zeitraum der (geschätzten) Erstellung der Ressource im EDTF-Format: https://www.loc.gov/standards/datetime/"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "description",
+						"super": ["hasValue", "http://purl.org/dc/terms/description"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Beschreibung"
+						},
+						"comments": {
+							"de": "Eine Beschreibung des Objekts bzw. der Ressource"
+						},
+						"gui_element": "Textarea"
+					},
+					{
+						"name": "partOf_Metadata",
+						"super": ["hasLinkTo"],
+						"object": ":sgb_OBJECT",
+						"labels": {
+							"de": "ist Teil von Metadatenobjekt"
+						},
+						"gui_element": "Searchbox"
+					},
+					{
+						"name": "extent",
+						"super": ["hasValue", "http://purl.org/dc/terms/extent"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Umfang/Auflösung"
+						},
+						"comments": {
+							"de": "Die Abmessungen der Ressource"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "format",
+						"super": ["hasValue", "http://purl.org/dc/terms/format"],
+						"object": "ListValue",
+						"labels": {
+							"de": "Format"
+						},
+						"comments": {
+							"de": "Das Dateiformat der Ressource. Format: Internet Media Types (MIME)"
+						},
+						"gui_element": "List",
+						"gui_attributes": {
+							"hlist": "LIFmqIL2SIijo-c-yqXA6Q"
+						}
+					},
+					{
+						"name": "identifier",
+						"super": ["hasValue", "http://purl.org/dc/terms/identifier"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Identifikator"
+						},
+						"comments": {
+							"de": "Eindeutiger Objekt- oder Ressourcenidentifikator"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "isPartOf",
+						"super": ["hasValue", "http://purl.org/dc/terms/isPartOf"],
+						"object": "TextValue",
+						"labels": {
+							"de": "ist Teil von"
+						},
+						"comments": {
+							"de": "Referenzen auf übergeordnete Sammlungen oder Publikationen, z.B. DOI, bibliografische Angaben"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "language",
+						"super": ["hasValue", "http://purl.org/dc/terms/language"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Sprache"
+						},
+						"comments": {
+							"de": "Eine Sprache der Ressource. Format: ISO639-2"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "license",
+						"super": ["hasValue", "http://purl.org/dc/terms/license"],
+						"object": "UriValue",
+						"labels": {
+							"de": "Lizenz"
+						},
+						"comments": {
+							"de": "URL zur Lizenz"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "publisher",
+						"super": ["hasValue", "http://purl.org/dc/terms/publisher"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Verleger*in"
+						},
+						"comments": {
+							"de": "Alle Einrichtungen, die für die Bereitstellung der Ressource verantwortlich ist.\nKlarname und URL zur Einrichtung "
+						},
+						"gui_element": "Richtext"
+					},
+					{
+						"name": "publisher_as_text",
+						"super": ["hasValue", "http://purl.org/dc/terms/publisher"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Verleger*in (Text)"
+						},
+						"comments": {
+							"de": "Die Einrichtung, die für die Bereitstellung der Ressource verantwortlich ist.\nKlarname"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "publisher_as_url",
+						"super": ["hasValue", "http://purl.org/dc/terms/publisher"],
+						"object": "UriValue",
+						"labels": {
+							"de": "Verleger*in (URL)"
+						},
+						"comments": {
+							"de": "Die Einrichtung, die für die Bereitstellung der Ressource verantwortlich ist.\nURL zur Einrichtung"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "relation",
+						"super": ["hasValue", "http://purl.org/dc/terms/relation"],
+						"object": "UriValue",
+						"labels": {
+							"de": "Verwandte Ressourcen"
+						},
+						"comments": {
+							"de": "Eine verwandte Ressource"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "rights",
+						"super": ["hasValue", "http://purl.org/dc/terms/rights"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Rechte"
+						},
+						"comments": {
+							"de": "Informationen über die Rechte an der Ressource"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "source",
+						"super": ["hasValue", "http://purl.org/dc/terms/source"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Quelle"
+						},
+						"comments": {
+							"de": "Alle Verweise auf die Ressource innerhalb eines bestimmten Kontexts"
+						},
+						"gui_element": "Richtext"
+					},
+					{
+						"name": "source_as_text",
+						"super": ["hasValue", "http://purl.org/dc/terms/source"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Quelle (Text)"
+						},
+						"comments": {
+							"de": "Ein eindeutiger Verweis auf die Ressource innerhalb eines bestimmten Kontexts im Textformat"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "source_as_url",
+						"super": ["hasValue", "http://purl.org/dc/terms/source"],
+						"object": "UriValue",
+						"labels": {
+							"de": "Quelle (URL)"
+						},
+						"comments": {
+							"de": "Ein eindeutiger Verweis auf die Ressource innerhalb eines bestimmten Kontext als URL zur Ressource"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "subject",
+						"super": ["hasValue", "http://purl.org/dc/terms/subject"],
+						"object": "ListValue",
+						"labels": {
+							"de": "Thema"
+						},
+						"comments": {
+							"de": "Schlagworte (Vokabular tba)"
+						},
+						"gui_element": "List",
+						"gui_attributes": {
+							"hlist": "fecjPbTITdqyj9YMn473Iw"
+						}
+					},
+					{
+						"name": "temporal",
+						"super": ["hasValue", "http://purl.org/dc/terms/temporal"],
+						"object": "ListValue",
+						"labels": {
+							"de": "Epoche"
+						},
+						"comments": {
+							"de": "Epoche (Frühgeschichte, Antike, Mittelalter, Frühe Neuzeit, 19. Jahrhundert, 20. Jahrhundert, 21. Jahrhundert)"
+						},
+						"gui_element": "List",
+						"gui_attributes": {
+							"hlist": "EUn9MrlKRYSFWF7calHR8w"
+						}
+					},
+					{
+						"name": "title",
+						"super": ["hasValue", "http://purl.org/dc/terms/title"],
+						"object": "TextValue",
+						"labels": {
+							"de": "Titel"
+						},
+						"comments": {
+							"de": "Sprechender Titel des Objekts oder der Ressource"
+						},
+						"gui_element": "SimpleText"
+					},
+					{
+						"name": "type",
+						"super": ["hasValue", "http://purl.org/dc/terms/type"],
+						"object": "ListValue",
+						"labels": {
+							"de": "Typ"
+						},
+						"comments": {
+							"de": "Die Art oder das Genre der referenzierten Ressource im Archiv/Bibliothek etc."
+						},
+						"gui_element": "List",
+						"gui_attributes": {
+							"hlist": "7LxuYWDpSWW23p9K1P-fDQ"
+						}
+					}
+				],
+				"resources": [
+					{
+						"name": "sgb_MEDIA_IMAGE",
+						"super": [":sgb_MEDIA", "StillImageRepresentation"],
+						"labels": {
+							"de": "Ressource_Image"
+						},
+						"comments": {
+							"de": "Image Ressource\nMögliche Formate: JPG, JPEG, JP2, PNG, TIF, TIFF"
+						},
+						"cardinalities": [
+							{
+								"propname": ":rights",
+								"cardinality": "0-1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":license",
+								"cardinality": "0-1",
+								"gui_order": 2
+							}
+						]
+					},
+					{
+						"name": "sgb_MEDIA_TEXT",
+						"super": [":sgb_MEDIA", "TextRepresentation"],
+						"labels": {
+							"de": "Ressource_Text"
+						},
+						"comments": {
+							"de": "Text Ressource"
+						},
+						"cardinalities": [
+							{
+								"propname": ":rights",
+								"cardinality": "0-1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":license",
+								"cardinality": "0-1",
+								"gui_order": 2
+							}
+						]
+					},
+					{
+						"name": "sgb_MEDIA_DOCUMENT",
+						"super": [":sgb_MEDIA", "DocumentRepresentation"],
+						"labels": {
+							"de": "Ressource_Document"
+						},
+						"comments": {
+							"de": "Document"
+						},
+						"cardinalities": [
+							{
+								"propname": ":rights",
+								"cardinality": "0-1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":license",
+								"cardinality": "0-1",
+								"gui_order": 2
+							}
+						]
+					},
+					{
+						"name": "sgb_MEDIA_ARCHIV",
+						"super": [":sgb_MEDIA", "ArchiveRepresentation"],
+						"labels": {
+							"de": "Ressource_Archiv"
+						},
+						"comments": {
+							"de": "ArchiveRepresentation"
+						},
+						"cardinalities": [
+							{
+								"propname": ":rights",
+								"cardinality": "0-1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":license",
+								"cardinality": "0-1",
+								"gui_order": 2
+							}
+						]
+					},
+					{
+						"name": "sgb_MEDIA",
+						"super": "Resource",
+						"labels": {
+							"de": "Ressourcen"
+						},
+						"comments": {
+							"de": "Oberklasse für Ressourcen. Wird im Normalfall nicht für Entitäten verwendet"
+						},
+						"cardinalities": [
+							{
+								"propname": ":identifier",
+								"cardinality": "1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":partOf_Metadata",
+								"cardinality": "1-n",
+								"gui_order": 2
+							},
+							{
+								"propname": ":title",
+								"cardinality": "1",
+								"gui_order": 3
+							},
+							{
+								"propname": ":description",
+								"cardinality": "0-1",
+								"gui_order": 4
+							},
+							{
+								"propname": ":subject",
+								"cardinality": "0-1",
+								"gui_order": 5
+							},
+							{
+								"propname": ":temporal",
+								"cardinality": "0-1",
+								"gui_order": 6
+							},
+							{
+								"propname": ":creator",
+								"cardinality": "0-1",
+								"gui_order": 7
+							},
+							{
+								"propname": ":creator_as_text",
+								"cardinality": "0-n",
+								"gui_order": 8
+							},
+							{
+								"propname": ":creator_as_url",
+								"cardinality": "0-n",
+								"gui_order": 9
+							},
+							{
+								"propname": ":publisher",
+								"cardinality": "0-1",
+								"gui_order": 10
+							},
+							{
+								"propname": ":publisher_as_text",
+								"cardinality": "0-n",
+								"gui_order": 11
+							},
+							{
+								"propname": ":publisher_as_url",
+								"cardinality": "0-n",
+								"gui_order": 12
+							},
+							{
+								"propname": ":date",
+								"cardinality": "0-1",
+								"gui_order": 13
+							},
+							{
+								"propname": ":type",
+								"cardinality": "0-1",
+								"gui_order": 14
+							},
+							{
+								"propname": ":format",
+								"cardinality": "0-1",
+								"gui_order": 15
+							},
+							{
+								"propname": ":extent",
+								"cardinality": "0-1",
+								"gui_order": 16
+							},
+							{
+								"propname": ":source",
+								"cardinality": "0-1",
+								"gui_order": 17
+							},
+							{
+								"propname": ":source_as_text",
+								"cardinality": "0-n",
+								"gui_order": 18
+							},
+							{
+								"propname": ":source_as_url",
+								"cardinality": "0-n",
+								"gui_order": 19
+							},
+							{
+								"propname": ":language",
+								"cardinality": "0-1",
+								"gui_order": 20
+							},
+							{
+								"propname": ":relation",
+								"cardinality": "0-n",
+								"gui_order": 21
+							}
+						]
+					},
+					{
+						"name": "sgb_OBJECT",
+						"super": "Resource",
+						"labels": {
+							"de": "Metadatenobjekte"
+						},
+						"comments": {
+							"de": "Metadatenobjekt"
+						},
+						"cardinalities": [
+							{
+								"propname": ":identifier",
+								"cardinality": "1",
+								"gui_order": 1
+							},
+							{
+								"propname": ":title",
+								"cardinality": "1",
+								"gui_order": 2
+							},
+							{
+								"propname": ":description",
+								"cardinality": "0-1",
+								"gui_order": 3
+							},
+							{
+								"propname": ":subject",
+								"cardinality": "0-1",
+								"gui_order": 4
+							},
+							{
+								"propname": ":temporal",
+								"cardinality": "0-1",
+								"gui_order": 5
+							},
+							{
+								"propname": ":language",
+								"cardinality": "0-1",
+								"gui_order": 6
+							},
+							{
+								"propname": ":isPartOf",
+								"cardinality": "0-n",
+								"gui_order": 7
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
