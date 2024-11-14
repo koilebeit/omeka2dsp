@@ -1,0 +1,409 @@
+[
+	{
+		"rdfs:label": "DCMI Type Vocabulary",
+		"knora-api:attachedToProject": {
+			"@id": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw"
+		},
+		"knora-api:hasSubListNode": [
+			{
+				"rdfs:label": "Collection",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 0,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/fp9qP1ioRB-kUVpxNmA09Q"
+			},
+			{
+				"rdfs:label": "Dataset",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 1,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/_IxS5lQ6REysuei29f4WRg"
+			},
+			{
+				"rdfs:label": "Event",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 2,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/6OFQpGzLQEOsQ3347RQF2Q"
+			},
+			{
+				"rdfs:label": "Image",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 3,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/DtrI0KnqTGuMhc1nLXS8ig"
+			},
+			{
+				"rdfs:label": "InteractiveResource",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 4,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/azHUbLNaQ9KfPtRWeqyjNg"
+			},
+			{
+				"rdfs:label": "MovingImage",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 5,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/ypBZqSyDT0yWcuZZ6QP_Aw"
+			},
+			{
+				"rdfs:label": "PhysicalObject",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 6,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/MDoCP-pBS9akCRfV6yHdag"
+			},
+			{
+				"rdfs:label": "Service",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 7,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/lNsobpHDSAiWtNkclq-TcA"
+			},
+			{
+				"rdfs:label": "Software",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 8,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/v1lMcFMZQoyUrDSYUddd-g"
+			},
+			{
+				"rdfs:label": "Sound",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 9,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/T17JH5LGQhOejl9Cpr3g9w"
+			},
+			{
+				"rdfs:label": "StillImage",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 10,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/G2JdmD5WQwWZHbnYuY_yHA"
+			},
+			{
+				"rdfs:label": "Text",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w"
+				},
+				"knora-api:listNodePosition": 11,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/ZRHpyI42S_uHT-bdWesxCQ"
+			}
+		],
+		"knora-api:isRootNode": true,
+		"rdfs:comment": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7",
+		"@type": "knora-api:ListNode",
+		"@id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w",
+		"@context": {
+			"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+			"owl": "http://www.w3.org/2002/07/owl#",
+			"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+			"xsd": "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"rdfs:label": "Thema",
+		"knora-api:attachedToProject": {
+			"@id": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw"
+		},
+		"knora-api:hasSubListNode": {
+			"rdfs:label": "testthema",
+			"knora-api:hasRootNode": {
+				"@id": "http://rdfh.ch/lists/0856/a7lTecT9RtOk27XiJAbyrA"
+			},
+			"knora-api:listNodePosition": 0,
+			"@type": "knora-api:ListNode",
+			"@id": "http://rdfh.ch/lists/0856/Tlq4LYK4SXqXHKZ7mV8kcg"
+		},
+		"knora-api:isRootNode": true,
+		"rdfs:comment": "Subject",
+		"@type": "knora-api:ListNode",
+		"@id": "http://rdfh.ch/lists/0856/a7lTecT9RtOk27XiJAbyrA",
+		"@context": {
+			"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+			"owl": "http://www.w3.org/2002/07/owl#",
+			"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+			"xsd": "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"rdfs:label": "Era",
+		"knora-api:attachedToProject": {
+			"@id": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw"
+		},
+		"knora-api:hasSubListNode": [
+			{
+				"rdfs:label": "Fr\u00fchgeschichte",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 0,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/9g6zw3D_RSG7dy03vXPtCg"
+			},
+			{
+				"rdfs:label": "Antike",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 1,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/QQbh-WMVRZK8grH7AM_lwA"
+			},
+			{
+				"rdfs:label": "Mittelalter",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 2,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/fSZ-7FZbRSKzsK24GEUtSg"
+			},
+			{
+				"rdfs:label": "Fr\u00fche Neuzeit",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 3,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/Von6-vuLSoidrH8J9meouQ"
+			},
+			{
+				"rdfs:label": "19. Jahrhundert",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 4,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/hoFBLCj0Rea6JDXeV28sWA"
+			},
+			{
+				"rdfs:label": "20. Jahrhundert",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 5,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/5sLqqc6_QYS1SRpI1LiicQ"
+			},
+			{
+				"rdfs:label": "21. Jahrhundert",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ"
+				},
+				"knora-api:listNodePosition": 6,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/m8oVc-6FQ0iJAx59ekCiog"
+			}
+		],
+		"knora-api:isRootNode": true,
+		"rdfs:comment": "Vokabular f\u00fcr Epochen",
+		"@type": "knora-api:ListNode",
+		"@id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ",
+		"@context": {
+			"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+			"owl": "http://www.w3.org/2002/07/owl#",
+			"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+			"xsd": "http://www.w3.org/2001/XMLSchema#"
+		}
+	},
+	{
+		"rdfs:label": "Internet Media Type",
+		"knora-api:attachedToProject": {
+			"@id": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw"
+		},
+		"knora-api:hasSubListNode": [
+			{
+				"rdfs:label": "application/geo+json",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 0,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/y7LSGSBMROqjUnLPg8AZfQ"
+			},
+			{
+				"rdfs:label": "application/pdf",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 1,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/OLkgfnyWRjCNrX2vZyu6Kg"
+			},
+			{
+				"rdfs:label": "image/jpeg",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 2,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/k4dcxr6nR5SIOAXg-j9k_g"
+			},
+			{
+				"rdfs:label": "image/png",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 3,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/C_rSlkEKTJeTzFhgzLo9fg"
+			},
+			{
+				"rdfs:label": "image/svg+xml",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 4,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/jln3q-JHTa2oCSnmeS-TJw"
+			},
+			{
+				"rdfs:label": "image/tiff",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 5,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/pqZ0HAqaSU-86J4unTl13A"
+			},
+			{
+				"rdfs:label": "image/bmp",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 6,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/J7RR6eGuSFOMisvkyUYxlQ"
+			},
+			{
+				"rdfs:label": "image/emf",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 7,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/Askxpub1SfS2VH8aMeJ5UQ"
+			},
+			{
+				"rdfs:label": "image/wmf",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 8,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/sL1A4-DyR92yZR1qfLBzTA"
+			},
+			{
+				"rdfs:label": "image/gif",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 9,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/dbvKz_uVRNGRhkP0OPrraw"
+			},
+			{
+				"rdfs:label": "image/webp",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 10,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/s6GK0YHXS62PKf9rjKzEWQ"
+			},
+			{
+				"rdfs:label": "image/avif",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 11,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/hpgUe4TwQVqdM826FL6CBA"
+			},
+			{
+				"rdfs:label": "image/heic",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 12,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/xHM6TDzPQ1aTd6141qv_GA"
+			},
+			{
+				"rdfs:label": "image/heif",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 13,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/XsJT3jUgSo-0H3eIxR4J8g"
+			},
+			{
+				"rdfs:label": "text/csv",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 14,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/EocfVGA-QUK6A428AblBQg"
+			},
+			{
+				"rdfs:label": "text/markdown",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 15,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/AX4sBPmBRAiAO82ZcWB3Eg"
+			},
+			{
+				"rdfs:label": "text/plain",
+				"knora-api:hasRootNode": {
+					"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw"
+				},
+				"knora-api:listNodePosition": 16,
+				"@type": "knora-api:ListNode",
+				"@id": "http://rdfh.ch/lists/0856/KpQvf-SmTRGKLJ6MNRCTKQ"
+			}
+		],
+		"knora-api:isRootNode": true,
+		"rdfs:comment": "Internet Media Type",
+		"@type": "knora-api:ListNode",
+		"@id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw",
+		"@context": {
+			"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+			"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+			"owl": "http://www.w3.org/2002/07/owl#",
+			"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+			"xsd": "http://www.w3.org/2001/XMLSchema#"
+		}
+	}
+]

@@ -1,0 +1,187 @@
+{
+	"StadtGeschichteBasel_v1:isPartOf": {
+		"knora-api:valueAsString": "Lassau, Guido/Schwarz, Peter-Andrew (Hg.): Auf dem langen Weg zur Stadt. 50 000 v. Chr. – 800 n. Chr. Basel 2024 (Stadt.Geschichte.Basel).",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/iDLXFf66R_aF17YJrM7D8QG",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/iDLXFf66R_aF17YJrM7D8QG.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "iDLXFf66R_aF17YJrM7D8Q",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/iDLXFf66R_aF17YJrM7D8Q"
+	},
+	"knora-api:arkUrl": {
+		"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT",
+		"@type": "xsd:anyURI"
+	},
+	"rdfs:label": "abb30849",
+	"knora-api:versionArkUrl": {
+		"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT.20241105T104450755260959Z",
+		"@type": "xsd:anyURI"
+	},
+	"knora-api:attachedToProject": {
+		"@id": "http://rdfh.ch/projects/3KALGmwOTRW_A5J9h9rV4w"
+	},
+	"knora-api:userHasPermission": "CR",
+	"knora-api:creationDate": {
+		"@value": "2024-11-05T10:44:50.755260959Z",
+		"@type": "xsd:dateTimeStamp"
+	},
+	"StadtGeschichteBasel_v1:title": {
+		"knora-api:valueAsString": " Mauerreste der villa rustica (Riehen-Landauerhof), 2.–3. Jh. n. Chr.",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/0Fr5UbyMQBWR5gTlrZJIPgM",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/0Fr5UbyMQBWR5gTlrZJIPgM.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "0Fr5UbyMQBWR5gTlrZJIPg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/0Fr5UbyMQBWR5gTlrZJIPg"
+	},
+	"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+	"@type": "StadtGeschichteBasel_v1:sgb_OBJECT",
+	"StadtGeschichteBasel_v1:temporal": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/jWKazagiTL2OOqy1jFkpXgL",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "jWKazagiTL2OOqy1jFkpXg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:ListValue",
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/jWKazagiTL2OOqy1jFkpXg",
+		"knora-api:listValueAsListNode": {
+			"@id": "http://rdfh.ch/lists/0856/WmURVqURR2CdWhtlUgy1yA"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/jWKazagiTL2OOqy1jFkpXgL.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"StadtGeschichteBasel_v1:identifier": {
+		"knora-api:valueAsString": "abb30849",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/nUYoQQ3tSbehWV1cCIPWUAw",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/nUYoQQ3tSbehWV1cCIPWUAw.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "nUYoQQ3tSbehWV1cCIPWUA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/nUYoQQ3tSbehWV1cCIPWUA"
+	},
+	"knora-api:attachedToUser": {
+		"@id": "http://rdfh.ch/users/root"
+	},
+	"StadtGeschichteBasel_v1:language": {
+		"knora-api:valueAsString": "de",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/pXOSKsZPQViAJZoGTczYIQR",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/pXOSKsZPQViAJZoGTczYIQR.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "pXOSKsZPQViAJZoGTczYIQ",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/pXOSKsZPQViAJZoGTczYIQ"
+	},
+	"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA",
+	"StadtGeschichteBasel_v1:description": {
+		"knora-api:valueAsString": "Bei der Errichtung des Friedhofs Hörnli in Riehen wurden im Jahr 1930 die Reste eines grossen römischen Gutshofs (villa rustica) ausgegraben. Nach der Dokumentation wurden die Mauersteine an Ort und Stelle zerkleinert.\n",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/yNlQLMr=RCCpfCi0sdEqcgp",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/Ltg3tSbtSKO=p3ccj2x2PAT/yNlQLMr=RCCpfCi0sdEqcgp.20241105T104450755260959Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:44:50.755260959Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "yNlQLMr-RCCpfCi0sdEqcg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/Ltg3tSbtSKO-p3ccj2x2PA/values/yNlQLMr-RCCpfCi0sdEqcg"
+	},
+	"@context": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+		"StadtGeschichteBasel_v1": "http://0.0.0.0:3333/ontology/0856/StadtGeschichteBasel_v1/v2#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	}
+}

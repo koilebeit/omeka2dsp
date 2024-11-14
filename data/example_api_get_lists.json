@@ -1,0 +1,88 @@
+{
+	"lists": [
+		{
+			"id": "http://rdfh.ch/lists/0856/kM6yGH6nTCuU4NYqWPsB5w",
+			"projectIri": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw",
+			"name": "7LxuYWDpSWW23p9K1P-fDQ",
+			"labels": [
+				{
+					"value": "DCMI Type Vocabulary",
+					"language": "en"
+				},
+				{
+					"value": "DCMI Typ",
+					"language": "de"
+				}
+			],
+			"comments": [
+				{
+					"value": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7",
+					"language": "en"
+				}
+			],
+			"isRootNode": true
+		},
+		{
+			"id": "http://rdfh.ch/lists/0856/a7lTecT9RtOk27XiJAbyrA",
+			"projectIri": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw",
+			"name": "fecjPbTITdqyj9YMn473Iw",
+			"labels": [
+				{
+					"value": "Thema",
+					"language": "de"
+				}
+			],
+			"comments": [
+				{
+					"value": "Thema",
+					"language": "de"
+				},
+				{
+					"value": "Subject",
+					"language": "en"
+				}
+			],
+			"isRootNode": true
+		},
+		{
+			"id": "http://rdfh.ch/lists/0856/-lNLtCsZQHaTvM0pOJAHIQ",
+			"projectIri": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw",
+			"name": "EUn9MrlKRYSFWF7calHR8w",
+			"labels": [
+				{
+					"value": "Era",
+					"language": "en"
+				},
+				{
+					"value": "Epoche",
+					"language": "de"
+				}
+			],
+			"comments": [
+				{
+					"value": "Vokabular f\u00fcr Epochen",
+					"language": "de"
+				}
+			],
+			"isRootNode": true
+		},
+		{
+			"id": "http://rdfh.ch/lists/0856/OTIBylAbRCmVNKrHkGwCDw",
+			"projectIri": "http://rdfh.ch/projects/Q33XVp9dSEyc8iz-L7i-Jw",
+			"name": "LIFmqIL2SIijo-c-yqXA6Q",
+			"labels": [
+				{
+					"value": "Internet Media Type",
+					"language": "de"
+				}
+			],
+			"comments": [
+				{
+					"value": "Internet Media Type",
+					"language": "de"
+				}
+			],
+			"isRootNode": true
+		}
+	]
+}

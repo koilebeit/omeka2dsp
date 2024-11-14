@@ -1,0 +1,633 @@
+{
+	"StadtGeschichteBasel_v1:creator_as_url": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/AJNYy1auTe64I6SatP=IfQ2",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/AJNYy1auTe64I6SatP=IfQ2.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "AJNYy1auTe64I6SatP-IfQ",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://dls.staatsarchiv.bs.ch/",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/AJNYy1auTe64I6SatP-IfQ"
+	},
+	"StadtGeschichteBasel_v1:source_as_url": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/xb8CVmwxQeu=t8ZqonL7GA3",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/xb8CVmwxQeu=t8ZqonL7GA3.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "xb8CVmwxQeu-t8ZqonL7GA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://dls.staatsarchiv.bs.ch/records/1026655",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/xb8CVmwxQeu-t8ZqonL7GA"
+	},
+	"knora-api:versionArkUrl": {
+		"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1.20241105T104825503448096Z",
+		"@type": "xsd:anyURI"
+	},
+	"knora-api:attachedToProject": {
+		"@id": "http://rdfh.ch/projects/3KALGmwOTRW_A5J9h9rV4w"
+	},
+	"knora-api:userHasPermission": "CR",
+	"StadtGeschichteBasel_v1:publisher": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/NzN6ThnyT8O137XP3dhC9ws",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/NzN6ThnyT8O137XP3dhC9ws.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "NzN6ThnyT8O137XP3dhC9w",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/NzN6ThnyT8O137XP3dhC9w"
+	},
+	"StadtGeschichteBasel_v1:source_as_text": {
+		"knora-api:valueAsString": "Staatsarchiv Basel-Stadt ",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/q6iYxxfiTyeTd0iue5uu3A5",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/q6iYxxfiTyeTd0iue5uu3A5.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "q6iYxxfiTyeTd0iue5uu3A",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/q6iYxxfiTyeTd0iue5uu3A"
+	},
+	"StadtGeschichteBasel_v1:title": {
+		"knora-api:valueAsString": " Mauerreste der villa rustica (Riehen-Landauerhof), 2.–3. Jh. n. Chr.",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/8MVhdk8CSIOhQPlL3=hPMQ3",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/8MVhdk8CSIOhQPlL3=hPMQ3.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "8MVhdk8CSIOhQPlL3-hPMQ",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/8MVhdk8CSIOhQPlL3-hPMQ"
+	},
+	"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+	"@type": "StadtGeschichteBasel_v1:sgb_MEDIA_IMAGE",
+	"StadtGeschichteBasel_v1:creator_as_text": {
+		"knora-api:valueAsString": " Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/bNhjnrA=RQ=0mwIp4QmLYw4",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/bNhjnrA=RQ=0mwIp4QmLYw4.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "bNhjnrA-RQ-0mwIp4QmLYw",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/bNhjnrA-RQ-0mwIp4QmLYw"
+	},
+	"StadtGeschichteBasel_v1:temporal": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/VvSdEy53Qpivb49g1KxOwAG",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "VvSdEy53Qpivb49g1KxOwA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:ListValue",
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/VvSdEy53Qpivb49g1KxOwA",
+		"knora-api:listValueAsListNode": {
+			"@id": "http://rdfh.ch/lists/0856/WmURVqURR2CdWhtlUgy1yA"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/VvSdEy53Qpivb49g1KxOwAG.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"StadtGeschichteBasel_v1:license": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/eRRz26vTS4Kua5Khdls6dgM",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/eRRz26vTS4Kua5Khdls6dgM.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "eRRz26vTS4Kua5Khdls6dg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://creativecommons.org/publicdomain/mark/1.0/ ",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/eRRz26vTS4Kua5Khdls6dg"
+	},
+	"knora-api:arkUrl": {
+		"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1",
+		"@type": "xsd:anyURI"
+	},
+	"StadtGeschichteBasel_v1:subject": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/GwSoM_qTQDOe7L4wdvz4Ggz",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "GwSoM_qTQDOe7L4wdvz4Gg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:ListValue",
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/GwSoM_qTQDOe7L4wdvz4Gg",
+		"knora-api:listValueAsListNode": {
+			"@id": "http://rdfh.ch/lists/0856/RQq2tw-tSMiv4iwbQIOXOQ"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/GwSoM_qTQDOe7L4wdvz4Ggz.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"rdfs:label": "m30849",
+	"knora-api:hasStillImageFileValue": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/t0gpLSjnQs25RhirtcSUSQd",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/t0gpLSjnQs25RhirtcSUSQd.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:stillImageFileValueHasDimX": 3848,
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "t0gpLSjnQs25RhirtcSUSQ",
+		"knora-api:stillImageFileValueHasDimY": 3751,
+		"knora-api:stillImageFileValueHasIIIFBaseUrl": {
+			"@value": "http://0.0.0.0:1024/0856",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/t0gpLSjnQs25RhirtcSUSQ",
+		"knora-api:fileValueAsUrl": {
+			"@value": "http://0.0.0.0:1024/0856/4GXlLeWsoKo-8RoNUUKY6mp.jpx/full/3848,3751/0/default.jpg",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:StillImageFileValue",
+		"knora-api:fileValueHasFilename": "4GXlLeWsoKo-8RoNUUKY6mp.jpx"
+	},
+	"knora-api:creationDate": {
+		"@value": "2024-11-05T10:48:25.503448096Z",
+		"@type": "xsd:dateTimeStamp"
+	},
+	"StadtGeschichteBasel_v1:source": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/records/1026655, Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/EQtWcgYJRZKovyqn9q5CswF",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/EQtWcgYJRZKovyqn9q5CswF.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "EQtWcgYJRZKovyqn9q5Csw",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/EQtWcgYJRZKovyqn9q5Csw"
+	},
+	"StadtGeschichteBasel_v1:publisher_as_text": {
+		"knora-api:valueAsString": " Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/vX1yhCdzSI6gbrq8bGuoqAS",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/vX1yhCdzSI6gbrq8bGuoqAS.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "vX1yhCdzSI6gbrq8bGuoqA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/vX1yhCdzSI6gbrq8bGuoqA"
+	},
+	"StadtGeschichteBasel_v1:extent": {
+		"knora-api:valueAsString": " 3848 × 3751",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/O1DtyW2uRFWpoaV5rfELzAl",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/O1DtyW2uRFWpoaV5rfELzAl.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "O1DtyW2uRFWpoaV5rfELzA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/O1DtyW2uRFWpoaV5rfELzA"
+	},
+	"knora-api:attachedToUser": {
+		"@id": "http://rdfh.ch/users/root"
+	},
+	"StadtGeschichteBasel_v1:language": {
+		"knora-api:valueAsString": "de",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/q1ygwvZFRgCRvf99=o5YFgg",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/q1ygwvZFRgCRvf99=o5YFgg.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "q1ygwvZFRgCRvf99-o5YFg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/q1ygwvZFRgCRvf99-o5YFg"
+	},
+	"StadtGeschichteBasel_v1:publisher_as_url": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/QfmnQ=j2Rd=T8X7SBJQ0vw3",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/QfmnQ=j2Rd=T8X7SBJQ0vw3.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "QfmnQ-j2Rd-T8X7SBJQ0vw",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://dls.staatsarchiv.bs.ch/",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/QfmnQ-j2Rd-T8X7SBJQ0vw"
+	},
+	"StadtGeschichteBasel_v1:type": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/p4Yw19XkTKWCXvg95LCJbg_",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "p4Yw19XkTKWCXvg95LCJbg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:ListValue",
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/p4Yw19XkTKWCXvg95LCJbg",
+		"knora-api:listValueAsListNode": {
+			"@id": "http://rdfh.ch/lists/0856/08hqK6zWQ8auqy_sAYotgA"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/p4Yw19XkTKWCXvg95LCJbg_.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"StadtGeschichteBasel_v1:format": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/ZpLCl5eYQpy8kb3yf0SiJg=",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "ZpLCl5eYQpy8kb3yf0SiJg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:ListValue",
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/ZpLCl5eYQpy8kb3yf0SiJg",
+		"knora-api:listValueAsListNode": {
+			"@id": "http://rdfh.ch/lists/0856/8CnaCipMTRuNsmM9q_TI7w"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/ZpLCl5eYQpy8kb3yf0SiJg=.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"StadtGeschichteBasel_v1:relation": {
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/dmOf_mrAS7yKkWKTRjI8wAG",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/dmOf_mrAS7yKkWKTRjI8wAG.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "dmOf_mrAS7yKkWKTRjI8wA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://hls-dhs-dss.ch/de/articles/023762",
+			"@type": "xsd:anyURI"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/dmOf_mrAS7yKkWKTRjI8wA"
+	},
+	"StadtGeschichteBasel_v1:identifier": {
+		"knora-api:valueAsString": "m30849",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/frDLjHYtS=2M6Q3XQL6UiQ8",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/frDLjHYtS=2M6Q3XQL6UiQ8.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "frDLjHYtS-2M6Q3XQL6UiQ",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/frDLjHYtS-2M6Q3XQL6UiQ"
+	},
+	"StadtGeschichteBasel_v1:date": {
+		"knora-api:valueAsString": "1935",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/rU_yJ8Z0Q9aok2L7ltjJlAe",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/rU_yJ8Z0Q9aok2L7ltjJlAe.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "rU_yJ8Z0Q9aok2L7ltjJlA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/rU_yJ8Z0Q9aok2L7ltjJlA"
+	},
+	"StadtGeschichteBasel_v1:rights": {
+		"knora-api:valueAsString": " Public Domain, Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/YItpowZkRrKo1KEUXf89ZgS",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/YItpowZkRrKo1KEUXf89ZgS.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "YItpowZkRrKo1KEUXf89Zg",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/YItpowZkRrKo1KEUXf89Zg"
+	},
+	"StadtGeschichteBasel_v1:creator": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/KIpAkMHuR8OlRa1nyaOZ8wt",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/KIpAkMHuR8OlRa1nyaOZ8wt.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "KIpAkMHuR8OlRa1nyaOZ8w",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/KIpAkMHuR8OlRa1nyaOZ8w"
+	},
+	"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ",
+	"StadtGeschichteBasel_v1:description": {
+		"knora-api:valueAsString": "Bei der Errichtung des Friedhofs Hörnli in Riehen wurden im Jahr 1930 die Reste eines grossen römischen Gutshofs (villa rustica) ausgegraben. Nach der Dokumentation wurden die Mauersteine an Ort und Stelle zerkleinert.\n",
+		"knora-api:arkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/tVilR2G_QsehMkd4Nq2vlAp",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:versionArkUrl": {
+			"@value": "http://0.0.0.0:3336/ark:/72163/1/0856/7DwbG507RSGXMDEAxmFLHQ1/tVilR2G_QsehMkd4Nq2vlAp.20241105T104825503448096Z",
+			"@type": "xsd:anyURI"
+		},
+		"knora-api:userHasPermission": "CR",
+		"knora-api:valueCreationDate": {
+			"@value": "2024-11-05T10:48:25.503448096Z",
+			"@type": "xsd:dateTimeStamp"
+		},
+		"knora-api:attachedToUser": {
+			"@id": "http://rdfh.ch/users/root"
+		},
+		"knora-api:valueHasUUID": "tVilR2G_QsehMkd4Nq2vlA",
+		"knora-api:hasPermissions": "CR knora-admin:ProjectAdmin|D knora-admin:ProjectMember",
+		"@type": "knora-api:TextValue",
+		"knora-api:hasTextValueType": {
+			"@id": "knora-api:UnformattedText"
+		},
+		"@id": "http://rdfh.ch/0856/7DwbG507RSGXMDEAxmFLHQ/values/tVilR2G_QsehMkd4Nq2vlA"
+	},
+	"@context": {
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+		"StadtGeschichteBasel_v1": "http://0.0.0.0:3333/ontology/0856/StadtGeschichteBasel_v1/v2#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
+	}
+}

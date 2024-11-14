@@ -32,7 +32,7 @@
 				"familyName": "Mähr",
 				"password": "",
 				"lang": "de",
-				"groups": ["stadtgeschichtebasel:rosetta-editors"],
+				"groups": [],
 				"projects": ["stadtgeschichtebasel:admin"],
 				"status": true
 			},
@@ -387,6 +387,7 @@
 					{
 						"name": "partOf_Metadata",
 						"super": ["hasLinkTo"],
+						"subject": ":sgb_MEDIA",
 						"object": ":sgb_OBJECT",
 						"labels": {
 							"de": "ist Teil von Metadatenobjekt"
@@ -636,12 +637,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 1
+								"gui_order": 22
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 2
+								"gui_order": 23
 							}
 						]
 					},
@@ -658,12 +659,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 1
+								"gui_order": 22
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 2
+								"gui_order": 23
 							}
 						]
 					},
@@ -680,12 +681,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 1
+								"gui_order": 22
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 2
+								"gui_order": 23
 							}
 						]
 					},
@@ -702,12 +703,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 1
+								"gui_order": 22
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 2
+								"gui_order": 23
 							}
 						]
 					},
@@ -728,7 +729,7 @@
 							},
 							{
 								"propname": ":partOf_Metadata",
-								"cardinality": "1-n",
+								"cardinality": "0-n",
 								"gui_order": 2
 							},
 							{
