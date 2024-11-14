@@ -22,18 +22,11 @@ npm run check
 npm run format
 ```
 
-create project:
+### create project
 
 ```
 cd api
-dsp-tools create -s 0.0.0.0:3333 -u root@example.com -p test ../data/data_model_dasch.json
-```
-
-MEDIEN objekte können nicht hochgeladen werden. Upload der Datei über ingest_assets_post.py oder upload_file.py funktioniert. Die zurückerhaltene internerFilename in Medienobjekt kopiert (dasch_api_post_MEDIA.json) und dann api_create.py funktioniert nicht:
-
-```
-Failed to create resource. Status code: 400
-Response: {"knora-api:error":"dsp.errors.BadRequestException: No file info found for DocumentFileValue","@context":{"knora-api":"http://api.knora.org/ontology/knora-api/v2#"}}
+dsp-tools create -s 0.0.0.0:3333 -u root@example.com -p test data/data_model_dasch.json
 ```
 
 ## Support

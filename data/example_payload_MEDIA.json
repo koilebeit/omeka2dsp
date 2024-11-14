@@ -45,31 +45,8 @@
 		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
 		"@type": "knora-api:TextValue"
 	},
-	"StadtGeschichteBasel_v1:creator_as_url": {
-		"@type": "knora-api:UriValue",
-		"knora-api:uriValueAsUri": {
-			"@value": "https://dls.staatsarchiv.bs.ch/",
-			"@type": "xsd:anyURI"
-		}
-	},
-	"StadtGeschichteBasel_v1:creator_as_text": {
-		"knora-api:valueAsString": " Staatsarchiv Basel-Stadt",
-		"@type": "knora-api:TextValue"
-	},
-
 	"StadtGeschichteBasel_v1:publisher": {
 		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
-		"@type": "knora-api:TextValue"
-	},
-	"StadtGeschichteBasel_v1:publisher_as_url": {
-		"@type": "knora-api:UriValue",
-		"knora-api:uriValueAsUri": {
-			"@value": "https://dls.staatsarchiv.bs.ch/",
-			"@type": "xsd:anyURI"
-		}
-	},
-	"StadtGeschichteBasel_v1:publisher_as_text": {
-		"knora-api:valueAsString": " Staatsarchiv Basel-Stadt",
 		"@type": "knora-api:TextValue"
 	},
 	"StadtGeschichteBasel_v1:date": {
@@ -94,17 +71,6 @@
 	},
 	"StadtGeschichteBasel_v1:source": {
 		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/records/1026655, Staatsarchiv Basel-Stadt",
-		"@type": "knora-api:TextValue"
-	},
-	"StadtGeschichteBasel_v1:source_as_url": {
-		"@type": "knora-api:UriValue",
-		"knora-api:uriValueAsUri": {
-			"@value": "https://dls.staatsarchiv.bs.ch/records/1026655",
-			"@type": "xsd:anyURI"
-		}
-	},
-	"StadtGeschichteBasel_v1:source_as_text": {
-		"knora-api:valueAsString": "Staatsarchiv Basel-Stadt ",
 		"@type": "knora-api:TextValue"
 	},
 	"StadtGeschichteBasel_v1:language": {

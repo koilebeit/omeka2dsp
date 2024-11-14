@@ -337,30 +337,6 @@
 						"gui_element": "Richtext"
 					},
 					{
-						"name": "creator_as_text",
-						"super": ["hasValue", "http://purl.org/dc/terms/creator"],
-						"object": "TextValue",
-						"labels": {
-							"de": "Ersteller*in (Text)"
-						},
-						"comments": {
-							"de": "Eine Entität (Autor*in), die in erster Linie für die Erstellung der Ressource verantwortlich ist.\nKlarname"
-						},
-						"gui_element": "SimpleText"
-					},
-					{
-						"name": "creator_as_url",
-						"super": ["hasValue", "http://purl.org/dc/terms/creator"],
-						"object": "UriValue",
-						"labels": {
-							"de": "Ersteller*in (URL)"
-						},
-						"comments": {
-							"de": "Eine Entität (Autor*in), die in erster Linie für die Erstellung der Ressource verantwortlich ist.\nURL zu Wikidata.org"
-						},
-						"gui_element": "SimpleText"
-					},
-					{
 						"name": "date",
 						"super": ["hasValue", "http://purl.org/dc/terms/date"],
 						"object": "TextValue",
@@ -441,7 +417,7 @@
 							"de": "ist Teil von"
 						},
 						"comments": {
-							"de": "Referenzen auf übergeordnete Sammlungen oder Publikationen, z.B. DOI, bibliografische Angaben"
+							"de": "Referenzen auf übergeordnete Sammlungen oder Publikationen, z.B. DOI, bibliografische Angaben."
 						},
 						"gui_element": "SimpleText"
 					},
@@ -482,30 +458,6 @@
 						"gui_element": "Richtext"
 					},
 					{
-						"name": "publisher_as_text",
-						"super": ["hasValue", "http://purl.org/dc/terms/publisher"],
-						"object": "TextValue",
-						"labels": {
-							"de": "Verleger*in (Text)"
-						},
-						"comments": {
-							"de": "Die Einrichtung, die für die Bereitstellung der Ressource verantwortlich ist.\nKlarname"
-						},
-						"gui_element": "SimpleText"
-					},
-					{
-						"name": "publisher_as_url",
-						"super": ["hasValue", "http://purl.org/dc/terms/publisher"],
-						"object": "UriValue",
-						"labels": {
-							"de": "Verleger*in (URL)"
-						},
-						"comments": {
-							"de": "Die Einrichtung, die für die Bereitstellung der Ressource verantwortlich ist.\nURL zur Einrichtung"
-						},
-						"gui_element": "SimpleText"
-					},
-					{
 						"name": "relation",
 						"super": ["hasValue", "http://purl.org/dc/terms/relation"],
 						"object": "UriValue",
@@ -540,30 +492,6 @@
 							"de": "Alle Verweise auf die Ressource innerhalb eines bestimmten Kontexts"
 						},
 						"gui_element": "Richtext"
-					},
-					{
-						"name": "source_as_text",
-						"super": ["hasValue", "http://purl.org/dc/terms/source"],
-						"object": "TextValue",
-						"labels": {
-							"de": "Quelle (Text)"
-						},
-						"comments": {
-							"de": "Ein eindeutiger Verweis auf die Ressource innerhalb eines bestimmten Kontexts im Textformat"
-						},
-						"gui_element": "SimpleText"
-					},
-					{
-						"name": "source_as_url",
-						"super": ["hasValue", "http://purl.org/dc/terms/source"],
-						"object": "UriValue",
-						"labels": {
-							"de": "Quelle (URL)"
-						},
-						"comments": {
-							"de": "Ein eindeutiger Verweis auf die Ressource innerhalb eines bestimmten Kontext als URL zur Ressource"
-						},
-						"gui_element": "SimpleText"
 					},
 					{
 						"name": "subject",
@@ -637,12 +565,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 22
+								"gui_order": 16
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 23
+								"gui_order": 17
 							}
 						]
 					},
@@ -659,12 +587,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 22
+								"gui_order": 16
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 23
+								"gui_order": 17
 							}
 						]
 					},
@@ -681,12 +609,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 22
+								"gui_order": 16
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 23
+								"gui_order": 17
 							}
 						]
 					},
@@ -703,12 +631,12 @@
 							{
 								"propname": ":rights",
 								"cardinality": "0-1",
-								"gui_order": 22
+								"gui_order": 16
 							},
 							{
 								"propname": ":license",
 								"cardinality": "0-1",
-								"gui_order": 23
+								"gui_order": 17
 							}
 						]
 					},
@@ -719,7 +647,7 @@
 							"de": "Ressourcen"
 						},
 						"comments": {
-							"de": "Oberklasse für Ressourcen. Wird im Normalfall nicht für Entitäten verwendet"
+							"de": "Oberklasse für Ressourcen. Wird im Normalfall nicht für Entitäten verwendet.\nAufgrund eines Bugs des DSP ist die Kardinalität der Eigenschaft 'partOf_Metadata' noch auf 0-n anstatt 1-n"
 						},
 						"cardinalities": [
 							{
@@ -758,74 +686,44 @@
 								"gui_order": 7
 							},
 							{
-								"propname": ":creator_as_text",
-								"cardinality": "0-n",
-								"gui_order": 8
-							},
-							{
-								"propname": ":creator_as_url",
-								"cardinality": "0-n",
-								"gui_order": 9
-							},
-							{
 								"propname": ":publisher",
 								"cardinality": "0-1",
-								"gui_order": 10
-							},
-							{
-								"propname": ":publisher_as_text",
-								"cardinality": "0-n",
-								"gui_order": 11
-							},
-							{
-								"propname": ":publisher_as_url",
-								"cardinality": "0-n",
-								"gui_order": 12
+								"gui_order": 8
 							},
 							{
 								"propname": ":date",
 								"cardinality": "0-1",
-								"gui_order": 13
+								"gui_order": 9
 							},
 							{
 								"propname": ":type",
 								"cardinality": "0-1",
-								"gui_order": 14
+								"gui_order": 10
 							},
 							{
 								"propname": ":format",
 								"cardinality": "0-1",
-								"gui_order": 15
+								"gui_order": 11
 							},
 							{
 								"propname": ":extent",
 								"cardinality": "0-1",
-								"gui_order": 16
+								"gui_order": 12
 							},
 							{
 								"propname": ":source",
 								"cardinality": "0-1",
-								"gui_order": 17
-							},
-							{
-								"propname": ":source_as_text",
-								"cardinality": "0-n",
-								"gui_order": 18
-							},
-							{
-								"propname": ":source_as_url",
-								"cardinality": "0-n",
-								"gui_order": 19
+								"gui_order": 13
 							},
 							{
 								"propname": ":language",
 								"cardinality": "0-1",
-								"gui_order": 20
+								"gui_order": 14
 							},
 							{
 								"propname": ":relation",
 								"cardinality": "0-n",
-								"gui_order": 21
+								"gui_order": 15
 							}
 						]
 					},
