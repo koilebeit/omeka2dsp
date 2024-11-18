@@ -2,14 +2,22 @@ import urllib
 from pathlib import Path
 from typing import cast
 
+import logging
+import os
+
 import requests
 import json
 
-PROJECT_SHORT_CODE = "0856"
-API_HOST = "http://0.0.0.0:3333"
-INGEST_HOST = "http://0.0.0.0:3340"
-DSP_USER = "root@example.com"
-DSP_PWD = "test"
+PROJECT_SHORT_CODE = os.getenv("PROJECT_SHORT_CODE", "0856")
+API_HOST = os.getenv("API_HOST", "http://0.0.0.0:3333")
+INGEST_HOST = os.getenv("INGEST_HOST", "http://0.0.0.0:3340")
+DSP_USER = os.getenv("DSP_USER", "root@example.com")
+DSP_PWD = os.getenv("DSP_PWD", "test")
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 def login(email: str, password: str) -> str:
     endpoint = f"{API_HOST}/v2/authentication"
@@ -27,7 +35,32 @@ def get_project():
         print("Response:", response.text)
     return cast(str, response.json()["project"]["id"])
 
-def get_ressource(token: str, object_class: str, identifier: str) -> json:
+# Get lists
+def get_lists(project_iri):
+    url_lists = f"{API_HOST}/admin/lists/?projectIri={project_iri}"
+    response_lists = requests.get(url_lists)
+    if response_lists.status_code == 200:
+        all_lists = []
+        for list in response_lists.json()["lists"]:
+            list_id = list["id"]
+            # URL encode the list IRI
+            encoded_list_id = urllib.parse.quote(list_id, safe='')
+            # Construct the API endpoint for this specific list ID
+            url = f"{API_HOST}/v2/lists/{encoded_list_id}"
+            response = requests.get(url)
+            if response.status_code == 200:
+                all_lists.append(response.json())
+                print(f"Complete list for {list_id} retrieved successfully!")
+            else:
+                print(f"Failed to retrieve complete list for {list_id}. Status code: {response.status_code}")
+                print("Response:", response.text)
+
+    else:
+        print(f"Failed to retrieve lists. Status code: {response.status_code}")
+        print("Response:", response.text)
+    return all_lists
+
+def get_ressource(token: str, object_class: str, identifier: str) -> dict:
     endpoint = f"{API_HOST}/v2/searchextended"
     headers = {
         "Authorization": f"Bearer {token}",
@@ -41,7 +74,7 @@ CONSTRUCT {{
     ?metadata StadtGeschichteBasel_v1:identifier ?identifierValue .
     ?metadata StadtGeschichteBasel_v1:title ?title .
 }} WHERE {{
-    ?metadata a StadtGeschichteBasel_v1:{object_class} .
+    ?metadata a {object_class} .
     ?metadata StadtGeschichteBasel_v1:identifier ?identifierValue .
     ?identifierValue knora-api:valueAsString ?identifier .
     ?metadata StadtGeschichteBasel_v1:title ?title .
@@ -50,11 +83,12 @@ CONSTRUCT {{
 """
     response = requests.post(endpoint, data=query.encode('utf-8'), headers=headers)
     if response.status_code == 200:
-        print("Response:", response.json())
+        print("Resource:", response.json())
+        return response.json()
     else:
         print(f"Error: {response.status_code}")
         print(response.text)
-    return response.json()
+        return {}
 
 def construct_payload():
     # TODO:
@@ -127,42 +161,59 @@ def create_resource(proj_iri: str, internal_filename_from_ingest: str, token: st
 
 
 def main() -> None:
-    
-    testfile = Path("../STORAGE_TEMP_DIR/0856/abb29212_Provinzen_West_Imperium_A.jpg")
-    
+    # Temporary test files
+    testfile = Path("../data/media_files/f1170f2dd7b49feb73a241f2bda2889d3659460b.tif")
+    test_object = Path("../data/example_payload_OBJEKT.json")
+    test_media = Path("../data/example_payload_MEDIA.json")
+    with open(test_object, "r") as json_file:
+        object_item = json.load(json_file)
+    with open(test_media, "r") as json_file:
+        media_item = json.load(json_file)
+
     ##### WORKFLOW
     # get_project()
-    # get list and list values TODO
-    # for all sgb_OBJECTS (metadata)
-        # if metadata exists already (check with function get_resource())
+    token = login(DSP_USER, DSP_PWD)
+    project_iri = get_project()
+    # get list and list values
+    project_lists = get_lists(project_iri)
+
+# for all sgb_OBJECTS (metadata)
+    metadata_iri = get_ressource(token, object_item["@type"], object_item["StadtGeschichteBasel_v1:identifier"]["knora-api:valueAsString"]).get('@id')
+    # if metadata exists already (check with function get_resource())
+    if metadata_iri:
+        print("object_item exists already")
             # if values are different 
-                # update values TODO
-        # else
-            # construct_payload() TODO
-            # create_resource() 
-    # for all sgb_MEDIA (medien)
-        # if media exists already (check with function get_resource())
-            # if values are different
-                # update values TODO
-        # else
-            # get metadata_iri/parent_iri(get_ressource(token, "sgb_OBJECT", "abb123").get('@id'))
-            # upload_file()
-            # construct_payload() TODO
-            # create_resource()
+               # update values TODO
+    else:
+        print("you can add the object_item to dasch")
+        # construct_payload() TODO
+        # create_resource(project_iri, internal_filename_from_ingest, token, metadata_iri)
+
+# for all sgb_MEDIA (medien)
+    # if media exists already (check with function get_resource())
+    media_iri = get_ressource(token, media_item["@type"], media_item["StadtGeschichteBasel_v1:identifier"]["knora-api:valueAsString"]).get('@id')
+        # if values are different
+    if media_iri:
+        print("media_item exists already")
+            # update values TODO
+    # else
+    else:
+        print("you can add the media_item to dasch")
+        # get metadata_iri/parent_iri(get_ressource(token, "sgb_OBJECT", "abb123").get('@id'))
+        # -- upload_file()
+        # internal_filename_from_ingest = upload_file(testfile, token)
+        # construct_payload() TODO
+        # create_resource(project_iri, internal_filename_from_ingest, token, metadata_iri)
+
+
+
+
+if __name__ == "__main__":
+    main()
+
 
     ###### hints
     # DSP only versions values, not resource metadata (e.g. rdfs:label)
     # The Knora API doesn't directly support creating multiple resources in a single request, as it expects each resource to be created with its own POST request.
     # If you need to create two separate resources of type sgb_MEDIA_IMAGE in the Knora API, you would generally make two separate POST requests to the /v2/resources endpoint, 
     # each with its own payload dictionary representing one resource object.
-
-
-    token = login(DSP_USER, DSP_PWD)
-    project_iri = get_project()
-    metadata_iri = get_ressource(token, "sgb_OBJECT", "abb123").get('@id') # metadata_iri = "http://rdfh.ch/0856/alDNmvZcQA-RLz8d3iQNMA"
-    internal_filename_from_ingest = upload_file(testfile, token)
-    create_resource(project_iri, internal_filename_from_ingest, token, metadata_iri)
-
-
-if __name__ == "__main__":
-    main()
