@@ -1,0 +1,92 @@
+{
+	"@type": "StadtGeschichteBasel_v1:sgb_MEDIA_DOCUMENT",
+	"knora-api:hasDocumentFileValue": {
+		"@type": "knora-api:DocumentFileValue",
+		"knora-api:fileValueHasFilename": "6MudqmaAvJX-EEAEpPFAtZ8.pdf"
+	},
+	"StadtGeschichteBasel_v1:identifier": {
+		"knora-api:valueAsString": "m30849",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:partOf_MetadataValue": {
+		"@type": "knora-api:LinkValue",
+		"knora-api:linkValueHasTargetIri": {
+			"@id": "http://rdfh.ch/0856/R1KAWVj2RTyMHEpdlGZyiw"
+		}
+	},
+	"StadtGeschichteBasel_v1:title": {
+		"knora-api:valueAsString": " Mauerreste der villa rustica (Riehen-Landauerhof), 2.–3. Jh. n. Chr.",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:description": {
+		"knora-api:valueAsString": "Bei der Errichtung des Friedhofs Hörnli in Riehen wurden im Jahr 1930 die Reste eines grossen römischen Gutshofs (villa rustica) ausgegraben. Nach der Dokumentation wurden die Mauersteine an Ort und Stelle zerkleinert.\n",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:subject": {
+		"@type": "knora-api:ListValue",
+		"knora-api:listValueAsListNode": {
+			"@id": "testthema"
+		}
+	},
+	"StadtGeschichteBasel_v1:temporal": {
+		"@type": "knora-api:ListValue",
+		"knora-api:listValueAsListNode": {
+			"@id": "Mittelalter"
+		}
+	},
+	"StadtGeschichteBasel_v1:creator": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:publisher": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/, Staatsarchiv Basel-Stadt",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:date": {
+		"knora-api:valueAsString": "1935",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:type": {
+		"@type": "knora-api:ListValue",
+		"knora-api:listValueAsListNode": {
+			"@id": "Image"
+		}
+	},
+	"StadtGeschichteBasel_v1:format": {
+		"@type": "knora-api:ListValue",
+		"knora-api:listValueAsListNode": {
+			"@id": "application/pdf"
+		}
+	},
+	"StadtGeschichteBasel_v1:extent": {
+		"knora-api:valueAsString": " 3848 × 3751",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:source": {
+		"knora-api:valueAsString": "https://dls.staatsarchiv.bs.ch/records/1026655, Staatsarchiv Basel-Stadt",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:language": {
+		"knora-api:valueAsString": "de",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:relation": {
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://hls-dhs-dss.ch/de/articles/023762",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"StadtGeschichteBasel_v1:rights": {
+		"knora-api:valueAsString": "Public Domain, Staatsarchiv Basel-Stadt",
+		"@type": "knora-api:TextValue"
+	},
+	"StadtGeschichteBasel_v1:license": {
+		"@type": "knora-api:UriValue",
+		"knora-api:uriValueAsUri": {
+			"@value": "https://creativecommons.org/publicdomain/mark/1.0/ ",
+			"@type": "xsd:anyURI"
+		}
+	},
+	"rdfs:label": "m30849"
+}

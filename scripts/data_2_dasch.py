@@ -83,21 +83,54 @@ CONSTRUCT {{
 """
     response = requests.post(endpoint, data=query.encode('utf-8'), headers=headers)
     if response.status_code == 200:
-        print("Resource:", response.json())
+        # print("Resource:", response.json())
         return response.json()
     else:
         print(f"Error: {response.status_code}")
         print(response.text)
         return {}
 
-def construct_payload():
-    # TODO:
-    # - set project_IRI
-    # - set correct listvalue_IRIs
-    # - set metadata_IRI (only if Media)
-    # - set internalFilename (only if Media)
 
-    return ""
+def update_value_with_reference(item, key, list_label, lists):
+    if key in item:
+        field = item[key]
+        current_id = field["knora-api:listValueAsListNode"].get("@id")
+        reference = next((list for list in lists if list["rdfs:label"] == list_label), None)
+        sublist = reference["knora-api:hasSubListNode"]
+        match = next((node for node in sublist if node["rdfs:label"] == current_id), None)
+        if match:
+            field["knora-api:listValueAsListNode"]["@id"] = match["@id"]
+            item[key] = field
+        else:
+            logging.warning(f"No match found for Value: {current_id} in item ID: {item.get('@id', 'Unknown')}")
+    return item
+
+def construct_payload(item, project_iri, lists):
+    context_data = {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+        "StadtGeschichteBasel_v1": API_HOST + "/ontology/" + PROJECT_SHORT_CODE + "/StadtGeschichteBasel_v1/v2#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    }
+    item["@context"] = context_data
+    # set project_IRI
+    item["knora-api:attachedToProject"] = {
+        "@id": project_iri
+    }
+
+    # set correct listvalue_IRIs
+    item = update_value_with_reference(item,"StadtGeschichteBasel_v1:temporal", "Era", lists)
+    item = update_value_with_reference(item,"StadtGeschichteBasel_v1:subject", "Thema", lists)
+
+    if item["@type"].startswith("StadtGeschichteBasel_v1:sgb_MEDIA"):
+        item = update_value_with_reference(item,"StadtGeschichteBasel_v1:type", "DCMI Type Vocabulary", lists)
+        item = update_value_with_reference(item,"StadtGeschichteBasel_v1:format", "Internet Media Type", lists)
+        # TODO:
+        # - set metadata_IRI (only if Media)
+        # - set internalFilename (only if Media)
+
+    return item
+
 
 def upload_file(filepath: Path, token: str) -> str:
     # http://0.0.0.0:3340/docs/#/assets/postProjectsShortcodeAssetsIngestFilename
@@ -114,48 +147,19 @@ def upload_file(filepath: Path, token: str) -> str:
         print(f"File upload failed: {response.status_code}: {response.text}")
     return cast(str, response.json()["internalFilename"])
 
+
 # TODO: construct payload in another function
-def create_resource(proj_iri: str, internal_filename_from_ingest: str, token: str, metadata_iri: str) -> None:
+def create_resource(payload: dict, token: str) -> None:
     # https://docs.dasch.swiss/latest/DSP-API/03-endpoints/api-v2/editing-resources/#creating-a-resource
     resources_endpoint = f"{API_HOST}/v2/resources"
     headers = {
         "Authorization": f"Bearer {token}",
         "X-Asset-Ingested": "true",
     }
-    payload = {
-        "@type": "StadtGeschichteBasel_v1:sgb_MEDIA_IMAGE",
-        "knora-api:attachedToProject": {
-            "@id": proj_iri,
-        },
-        "knora-api:hasStillImageFileValue": {
-            "@type": "knora-api:StillImageFileValue",
-            "knora-api:fileValueHasFilename": internal_filename_from_ingest,
-        },
-        "StadtGeschichteBasel_v1:identifier": {
-            "knora-api:valueAsString": "m30m123849",
-            "@type": "knora-api:TextValue"
-        },
-        "StadtGeschichteBasel_v1:title": {
-            "knora-api:valueAsString": " Mauerreste der villa rustica (Riehen-Landauerhof), 2.–3. Jh. n. Chr.",
-            "@type": "knora-api:TextValue"
-        },
-        "StadtGeschichteBasel_v1:partOf_MetadataValue" : {
-            "@type": "knora-api:LinkValue",
-            "knora-api:linkValueHasTargetIri" : {
-                "@id" : metadata_iri,
-            }
-        },
-        "rdfs:label": "asdf",
-        "@context": {
-            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-            "knora-api": "http://api.knora.org/ontology/knora-api/v2#",
-            "StadtGeschichteBasel_v1": "http://0.0.0.0:3333/ontology/0856/StadtGeschichteBasel_v1/v2#",
-            "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        },
-    }
+
     response = requests.post(resources_endpoint, json=payload, headers=headers, timeout=10)
     if response.status_code == 200:
-        print("Resource created")
+        print(f"Resource with id {payload["StadtGeschichteBasel_v1:identifier"]["knora-api:valueAsString"]} created")
     else:
         print(f"Resource creation failed: {response.status_code}: {response.text}")
 
@@ -163,8 +167,8 @@ def create_resource(proj_iri: str, internal_filename_from_ingest: str, token: st
 def main() -> None:
     # Temporary test files
     testfile = Path("../data/media_files/f1170f2dd7b49feb73a241f2bda2889d3659460b.tif")
-    test_object = Path("../data/example_payload_OBJEKT.json")
-    test_media = Path("../data/example_payload_MEDIA.json")
+    test_object = Path("../data/example_payload_OBJEKT_unprocessed.json")
+    test_media = Path("../data/example_payload_MEDIA_unprocessed.json")
     with open(test_object, "r") as json_file:
         object_item = json.load(json_file)
     with open(test_media, "r") as json_file:
@@ -185,9 +189,8 @@ def main() -> None:
             # if values are different 
                # update values TODO
     else:
-        print("you can add the object_item to dasch")
-        # construct_payload() TODO
-        # create_resource(project_iri, internal_filename_from_ingest, token, metadata_iri)
+        payload = construct_payload(object_item, project_iri, project_lists)
+        create_resource(payload, token)
 
 # for all sgb_MEDIA (medien)
     # if media exists already (check with function get_resource())
@@ -200,9 +203,10 @@ def main() -> None:
     else:
         print("you can add the media_item to dasch")
         # get metadata_iri/parent_iri(get_ressource(token, "sgb_OBJECT", "abb123").get('@id'))
+        parent_iri = get_ressource(token, "StadtGeschichteBasel_v1:sgb_OBJECT", "media.parentid").get('@id')
         # -- upload_file()
         # internal_filename_from_ingest = upload_file(testfile, token)
-        # construct_payload() TODO
+        payload = construct_payload(media_item, project_iri, project_lists)
         # create_resource(project_iri, internal_filename_from_ingest, token, metadata_iri)
 
 
