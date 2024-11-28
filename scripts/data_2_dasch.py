@@ -95,7 +95,7 @@ def get_resource(token: str, object_class: str, identifier: str) -> dict:
     }
     query = f"""
         PREFIX knora-api: <http://api.knora.org/ontology/knora-api/v2#>
-        PREFIX StadtGeschichteBasel_v1: <http://0.0.0.0:3333/ontology/0856/StadtGeschichteBasel_v1/v2#>
+        PREFIX StadtGeschichteBasel_v1: <{API_HOST}/ontology/{PROJECT_SHORT_CODE}/StadtGeschichteBasel_v1/v2#>
         CONSTRUCT {{
             ?metadata knora-api:isMainResource true .
             ?metadata StadtGeschichteBasel_v1:identifier ?identifierValue .
@@ -474,8 +474,6 @@ def main() -> None:
                             # TODO: zip file if it is not a dasch-valid format; geojson = TEXT?
                             internalFilename = upload_file_from_url(object_location,token)
                             if internalFilename:
-                                print(item_id)
-                                print(metadata_iri)
                                 media_payload = construct_payload(media, media_class, project_iri, project_lists, metadata_iri,internalFilename)
                                 create_resource(media_payload, token)
                             else:
