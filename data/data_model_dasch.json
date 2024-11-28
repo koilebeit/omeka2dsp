@@ -466,14 +466,14 @@
 					{
 						"name": "relation",
 						"super": ["hasValue", "http://purl.org/dc/terms/relation"],
-						"object": "UriValue",
+						"object": "TextValue",
 						"labels": {
 							"de": "Verwandte Ressourcen"
 						},
 						"comments": {
 							"de": "Eine verwandte Ressource"
 						},
-						"gui_element": "SimpleText"
+						"gui_element": "Richtext"
 					},
 					{
 						"name": "rights",
@@ -678,7 +678,7 @@
 							},
 							{
 								"propname": ":subject",
-								"cardinality": "0-1",
+								"cardinality": "0-n",
 								"gui_order": 5
 							},
 							{
@@ -688,12 +688,12 @@
 							},
 							{
 								"propname": ":creator",
-								"cardinality": "0-1",
+								"cardinality": "0-n",
 								"gui_order": 7
 							},
 							{
 								"propname": ":publisher",
-								"cardinality": "0-1",
+								"cardinality": "0-n",
 								"gui_order": 8
 							},
 							{
@@ -718,7 +718,7 @@
 							},
 							{
 								"propname": ":source",
-								"cardinality": "0-1",
+								"cardinality": "0-n",
 								"gui_order": 13
 							},
 							{
@@ -760,7 +760,7 @@
 							},
 							{
 								"propname": ":subject",
-								"cardinality": "0-1",
+								"cardinality": "0-n",
 								"gui_order": 4
 							},
 							{
