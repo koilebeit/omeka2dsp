@@ -225,7 +225,7 @@ def update_value(token, item, value, field, field_type, type_of_change):
         response = requests.post(endpoint, json=payload, headers=headers, timeout=10)
 
     if response.status_code == 200:
-        logging.info(f"{item[f"{PREFIX}identifier"]["knora-api:valueAsString"]}: {type_of_change}d {field} ('{value}')")
+        logging.info(f"{item[f"{PREFIX}identifier"]["knora-api:valueAsString"]}: {type_of_change}d {field} '{value}'")
     else:
         logging.error(f"{item[f"{PREFIX}identifier"]["knora-api:valueAsString"]}: update of {field} failed: {response.status_code}: {response.text}")
         # logging.error(payload)
@@ -625,7 +625,6 @@ def main() -> None:
                                 update_value(token, object,value["value"],value["field"],value["prop_type"],value["type"])
                         else:
                             logging.info(f"{media_id}: media exists already")
-                        raise
                     else:
                         if media.get("o:is_public", True):
                             logging.info(f"{media_id}: adding media to {media_class} ...")
