@@ -347,7 +347,7 @@
 						"super": ["hasValue", "http://purl.org/dc/terms/date"],
 						"object": "TextValue",
 						"labels": {
-							"de": "date"
+							"de": "EDTF-Datum"
 						},
 						"comments": {
 							"de": "Der Zeitpunkt oder Zeitraum der (geschätzten) Erstellung der Ressource im EDTF-Format: https://www.loc.gov/standards/datetime/"
