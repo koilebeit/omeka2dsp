@@ -21,6 +21,8 @@ from process_data_from_omeka import (
 # TODO: - error handling
 #       - logging
 #       - refactoring
+#       - format links from omeka to richtext (e.g. <a href="https://www.wikidata.org/wiki/Q122442230">Stadt.Geschichte.Basel</a>)
+#       - zip file if it is not a dasch-valid format; geojson = TEXT?
 
 # Configuration
 OMEKA_API_URL = os.getenv("OMEKA_API_URL")
@@ -36,7 +38,7 @@ DSP_PWD = os.getenv("DSP_PWD")
 PREFIX = os.getenv("PREFIX", "StadtGeschichteBasel_v1:")
 
 NUMBER_RANDOM_OBJECTS = 2
-TEST_DATA = {'abb13025', 'abb14375'}
+TEST_DATA = {'abb13025', 'abb14375', 'abb41033', 'abb11536', 'abb28998'}
 
 # Set up logging
 file_handler = logging.FileHandler("data_2_dasch.log", mode='w')
@@ -673,20 +675,15 @@ def main() -> None:
                         else:
                             logging.info(f"{media_id}: media exists already")
                     else:
-                        if media.get("o:is_public", True):
-                            logging.info(f"{media_id}: adding media to {media_class} ...")
-                            object_location = media.get("o:original_url", "")
-                            # TODO: zip file if it is not a dasch-valid format; geojson = TEXT?
-                            internalFilename = upload_file_from_url(object_location,token)
-                            if internalFilename:
-                                media_payload = construct_payload(media, media_class, project_iri, project_lists, metadata_iri,internalFilename)
-                                create_resource(media_payload, token)
-                            else:
-                                logging.error(f"{media_id}: could not create resource")
-                                
+                        logging.info(f"{media_id}: adding media to {media_class} ...")
+                        object_location = media.get("o:original_url", "")
+                        # TODO: zip file if it is not a dasch-valid format; geojson = TEXT?
+                        internalFilename = upload_file_from_url(object_location,token)
+                        if internalFilename:
+                            media_payload = construct_payload(media, media_class, project_iri, project_lists, metadata_iri,internalFilename)
+                            create_resource(media_payload, token)
                         else:
-                            # TODO: create resource in StadtGeschichteBasel_v1:sgb_Media (without representation)???
-                            logging.info(f"{media_id} is not public")
+                            logging.error(f"{media_id}: could not create resource")
                 else:
                     logging.error(f"{media_id}: could not create resource. Format is not supported: {extract_property(media.get("dcterms:format", []), 9)}")
         # break
