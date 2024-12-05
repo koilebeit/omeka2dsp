@@ -13,15 +13,11 @@ import requests
 
 # Configuration
 OMEKA_API_URL = os.getenv("OMEKA_API_URL", 'https://omeka.unibe.ch/api/')
-KEY_IDENTITY = os.getenv("KEY_IDENTITY", 'v0ox897Nt3aYTI6j97nHgKP8evw4qmCU')
-KEY_CREDENTIAL = os.getenv("KEY_CREDENTIAL", 't7vflBnj95A6cVoEVhescMSQD8XBm5RW')
+KEY_IDENTITY = os.getenv("KEY_IDENTITY")
+KEY_CREDENTIAL = os.getenv("KEY_CREDENTIAL")
 ITEM_SET_ID = os.getenv("ITEM_SET_ID", '10780')
 
-PROJECT_SHORT_CODE = os.getenv("PROJECT_SHORT_CODE", "0856")
-API_HOST = os.getenv("API_HOST", "http://0.0.0.0:3333")
-INGEST_HOST = os.getenv("INGEST_HOST", "http://0.0.0.0:3340")
-DSP_USER = os.getenv("DSP_USER", "root@example.com")
-DSP_PWD = os.getenv("DSP_PWD", "test")
+
 
 
 # --- Helper Functions for Data Extraction ---
