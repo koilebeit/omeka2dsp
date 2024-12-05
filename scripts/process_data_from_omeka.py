@@ -23,11 +23,6 @@ INGEST_HOST = os.getenv("INGEST_HOST", "http://0.0.0.0:3340")
 DSP_USER = os.getenv("DSP_USER", "root@example.com")
 DSP_PWD = os.getenv("DSP_PWD", "test")
 
-# Set up logging
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
-
 
 # --- Helper Functions for Data Extraction ---
 def is_valid_url(url):

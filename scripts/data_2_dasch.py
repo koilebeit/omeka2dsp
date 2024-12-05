@@ -1,5 +1,8 @@
+import argparse
+from argparse import Namespace
 import urllib
 from pathlib import Path
+import random
 from typing import cast
 import tempfile
 
@@ -7,7 +10,6 @@ import logging
 import os
 
 import requests
-import json
 
 from process_data_from_omeka import (
     get_items_from_collection,
@@ -33,10 +35,35 @@ DSP_USER = os.getenv("DSP_USER")
 DSP_PWD = os.getenv("DSP_PWD")
 PREFIX = os.getenv("PREFIX", "StadtGeschichteBasel_v1:")
 
+NUMBER_RANDOM_OBJECTS = 2
+TEST_DATA = {'abb13025', 'abb14375'}
+
 # Set up logging
+file_handler = logging.FileHandler("data_2_dasch.log", mode='w')
+file_handler.setLevel(logging.INFO)
+stream_handler = logging.StreamHandler()
+stream_handler.setLevel(logging.INFO)
 logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[stream_handler, file_handler]
 )
+
+
+def parse_arguments() -> Namespace:
+    """Parses the commandline for the path to the config-file and for the path to the output directory.
+
+    Returns:
+        Namespace: Argparse-Namespace object
+    """
+
+    parser = argparse.ArgumentParser(description="--mode")
+    parser.add_argument("-m", "--mode", type=str, choices=['all_data', 'sample_data', 'test_data'], default='all_data',
+                        help=f"which data should be processed? possible options: 'all_data' (all data), 'sample_data' ({NUMBER_RANDOM_OBJECTS} random metadata objects),'test_data' (10 selected test metadata objects)")
+    args = parser.parse_args()
+
+    return args
+
 
 def login(email: str, password: str) -> str:
     endpoint = f"{API_HOST}/v2/authentication"
@@ -572,8 +599,28 @@ def specify_mediaclass(media_type: str) -> str:
 
 def main() -> None:
 
+    args = parse_arguments()
+
     # Fetch item data
     items_data = get_items_from_collection(ITEM_SET_ID)
+
+    if args.mode == 'sample_data':
+        items_data = random.sample(items_data, NUMBER_RANDOM_OBJECTS)
+
+    if args.mode == 'test_data':
+        found_objects = []
+        remaining_identifiers = TEST_DATA.copy()
+
+        for obj in items_data:
+            for identifier in obj.get('dcterms:identifier', []):
+                if identifier['@value'] in remaining_identifiers:
+                    found_objects.append(obj)
+                    remaining_identifiers.remove(identifier['@value'])
+                    
+            if not remaining_identifiers:
+                break
+        items_data = found_objects
+
     # get_project()
     token = login(DSP_USER, DSP_PWD)
     project_iri = get_project()
