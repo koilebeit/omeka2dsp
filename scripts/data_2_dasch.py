@@ -1,13 +1,12 @@
 import argparse
 from argparse import Namespace
-import urllib
-from pathlib import Path
-import random
-from typing import cast
-import tempfile
-
 import logging
 import os
+from pathlib import Path
+import random
+import tempfile
+from typing import cast
+import urllib
 
 import requests
 
@@ -25,10 +24,7 @@ from process_data_from_omeka import (
 #       - zip file if it is not a dasch-valid format; geojson = TEXT?
 
 # Configuration
-OMEKA_API_URL = os.getenv("OMEKA_API_URL")
-KEY_IDENTITY = os.getenv("KEY_IDENTITY")
-KEY_CREDENTIAL = os.getenv("KEY_CREDENTIAL")
-ITEM_SET_ID = os.getenv("ITEM_SET_ID")
+ITEM_SET_ID = os.getenv("ITEM_SET_ID", '10780')
 
 PROJECT_SHORT_CODE = os.getenv("PROJECT_SHORT_CODE")
 API_HOST = os.getenv("API_HOST")

@@ -3,21 +3,12 @@ import os
 from urllib.parse import urljoin, urlparse
 
 import requests
-""" from data_2_dasch import (
-    construct_payload,
-    create_resource,
-    get_project,
-    get_resource,
-    login,
-) """
 
 # Configuration
 OMEKA_API_URL = os.getenv("OMEKA_API_URL", 'https://omeka.unibe.ch/api/')
 KEY_IDENTITY = os.getenv("KEY_IDENTITY")
 KEY_CREDENTIAL = os.getenv("KEY_CREDENTIAL")
 ITEM_SET_ID = os.getenv("ITEM_SET_ID", '10780')
-
-
 
 
 # --- Helper Functions for Data Extraction ---
