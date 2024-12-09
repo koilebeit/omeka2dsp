@@ -539,7 +539,8 @@ def upload_file_from_url(file_url: str, token: str, zip: bool = False) -> str:
         temp_file_path = zip_temp_file_path
 
     # Prepare the upload
-    encoded_filename = urllib.parse.quote(temp_file_path.name)
+    final_filename = original_filename if not zip else temp_file_path.name
+    encoded_filename = urllib.parse.quote(final_filename)
     endpoint = f"{INGEST_HOST}/projects/{PROJECT_SHORT_CODE}/assets/ingest/{encoded_filename}"
     headers = {
         "Authorization": f"Bearer {token}",
