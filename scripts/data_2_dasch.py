@@ -7,6 +7,7 @@ import random
 import tempfile
 from typing import cast
 import urllib
+import zipfile
 
 import requests
 
@@ -17,11 +18,9 @@ from process_data_from_omeka import (
     extract_property
 )
 
-# TODO: - error handling
-#       - logging
+# TODO: - improve error handling
+#       - improve logging
 #       - refactoring
-#       - format links from omeka to richtext (e.g. <a href="https://www.wikidata.org/wiki/Q122442230">Stadt.Geschichte.Basel</a>)
-#       - zip file if it is not a dasch-valid format; geojson = TEXT?
 
 # Configuration
 ITEM_SET_ID = os.getenv("ITEM_SET_ID", '10780')
@@ -505,7 +504,7 @@ def construct_payload(item, type, project_iri, lists, parent_iri, internalMediaF
 
     return payload
 
-def upload_file_from_url(file_url: str, token: str) -> str:
+def upload_file_from_url(file_url: str, token: str, zip: bool = False) -> str:
     """
     Downloads a file from a URL and uploads it to the specified endpoint.
 
@@ -532,8 +531,15 @@ def upload_file_from_url(file_url: str, token: str) -> str:
         temp_file.write(response.content)
         temp_file_path = Path(temp_file.name)
 
+    if zip:
+        zip_temp_file_path = temp_file_path.with_suffix(".zip")
+        with zipfile.ZipFile(zip_temp_file_path, "w", zipfile.ZIP_DEFLATED) as zip_file:
+            zip_file.write(temp_file_path, arcname=original_filename)
+        temp_file_path.unlink()
+        temp_file_path = zip_temp_file_path
+
     # Prepare the upload
-    encoded_filename = urllib.parse.quote(original_filename)
+    encoded_filename = urllib.parse.quote(temp_file_path.name)
     endpoint = f"{INGEST_HOST}/projects/{PROJECT_SHORT_CODE}/assets/ingest/{encoded_filename}"
     headers = {
         "Authorization": f"Bearer {token}",
@@ -580,6 +586,18 @@ def create_resource(payload: dict, token: str) -> None:
 
 
 def specify_mediaclass(media_type: str) -> str:
+    """
+    DSP-API v2 currently supports using SIPI to store the following types of files:
+
+    Images: JPEG, JPEG2000, TIFF, or PNG which are stored internally as JPEG2000
+    Documents: PDF
+    Audio: MPEG or Waveform audio file format (.wav, .x-wav, .vnd.wave)
+    Text files: CSV, JSON, ODD, RNG, TXT, XLS, XLSX, XML, XSD, XSL
+    Video files: MP4
+    Archive files: ZIP, TAR, GZIP
+    (https://docs.dasch.swiss/latest/DSP-API/03-endpoints/api-v2/editing-values/)
+    """
+
     valid_images_types = {"image/tiff", "image/jpg", "image/jpeg", "image/png", "image/gif"}
     valid_text_types = {"text/csv", "text/markdown", "text/plain", "application/json"}
     valid_doc_types = {"application/pdf"}
@@ -589,10 +607,8 @@ def specify_mediaclass(media_type: str) -> str:
         return f"{PREFIX}sgb_MEDIA_TEXT"
     if media_type in valid_doc_types:
         return f"{PREFIX}sgb_MEDIA_DOCUMENT"
-    # TODO: StadtGeschichteBasel_v1:sgb_MEDIA_ARCHIV (e.g. for geojson)
     else:
-        
-        return None
+        return f"{PREFIX}sgb_MEDIA_ARCHIV"
     
 
 def main() -> None:
@@ -653,36 +669,32 @@ def main() -> None:
             for media in media_data:
                 media_id = extract_property(media.get("dcterms:identifier", []), 10)
                 media_class = specify_mediaclass(extract_property(media.get("dcterms:format", []), 9))
-                if media_class:
-                    mediadata_iri = get_resource_by_id(token, media_class, media_id).get('@id')
-                    if mediadata_iri:
-                        object = get_full_resource(token, urllib.parse.quote(mediadata_iri, safe=''))
+                mediadata_iri = get_resource_by_id(token, media_class, media_id).get('@id')
+                if mediadata_iri:
+                    object = get_full_resource(token, urllib.parse.quote(mediadata_iri, safe=''))
 
-                        if 'knora-api:lastModificationDate' in object:
-                            dasch_date = object['knora-api:lastModificationDate']['@value']
-                        else:
-                            dasch_date = object['knora-api:creationDate']['@value']
-                        if media['o:modified']['@value'] > dasch_date:
-                            logging.info(f"{media_id}: media exists already, but it was modified. Update object ...")
-                            modified_values = check_values(object, media, project_lists)
-                            # print(modified_values)
-                            for value in modified_values:
-                                update_value(token, object,value["value"],value["field"],value["prop_type"],value["type"])
-                        else:
-                            logging.info(f"{media_id}: media exists already")
+                    if 'knora-api:lastModificationDate' in object:
+                        dasch_date = object['knora-api:lastModificationDate']['@value']
                     else:
-                        logging.info(f"{media_id}: adding media to {media_class} ...")
-                        object_location = media.get("o:original_url", "")
-                        # TODO: zip file if it is not a dasch-valid format; geojson = TEXT?
-                        internalFilename = upload_file_from_url(object_location,token)
-                        if internalFilename:
-                            media_payload = construct_payload(media, media_class, project_iri, project_lists, metadata_iri,internalFilename)
-                            create_resource(media_payload, token)
-                        else:
-                            logging.error(f"{media_id}: could not create resource")
+                        dasch_date = object['knora-api:creationDate']['@value']
+                    if media['o:modified']['@value'] > dasch_date:
+                        logging.info(f"{media_id}: media exists already, but it was modified. Update object ...")
+                        modified_values = check_values(object, media, project_lists)
+                        # print(modified_values)
+                        for value in modified_values:
+                            update_value(token, object,value["value"],value["field"],value["prop_type"],value["type"])
+                    else:
+                        logging.info(f"{media_id}: media exists already")
                 else:
-                    logging.error(f"{media_id}: could not create resource. Format is not supported: {extract_property(media.get("dcterms:format", []), 9)}")
-        # break
+                    logging.info(f"{media_id}: adding media to {media_class} ...")
+                    object_location = media.get("o:original_url", "")
+                    # zip file if it is not a dasch valid format;
+                    internalFilename = upload_file_from_url(object_location,token, zip=(media_class == f"{PREFIX}sgb_MEDIA_ARCHIV"))
+                    if internalFilename:
+                        media_payload = construct_payload(media, media_class, project_iri, project_lists, metadata_iri,internalFilename)
+                        create_resource(media_payload, token)
+                    else:
+                        logging.error(f"{media_id}: could not create resource")
 
 
 if __name__ == "__main__":

@@ -92,15 +92,8 @@ def extract_combined_values(props):
         if "@value" in prop
     ]
     uris = [
-        f"[{prop.get('o:label', '').replace(';', '&#59')}]({prop.get('@id', '').replace(';', '&#59')})"
+        f"<a href='{prop.get('@id', '').replace(';', '&#59')}'>{prop.get('o:label', '').replace(';', '&#59')}</a>"
         for prop in props
         if "@id" in prop
     ]
     return values + uris
-
-
-def extract_combined_values_csv(props):
-    """Combines text values and URIs into a semicolon-separated string."""
-    combined = extract_combined_values(props)
-    return ";".join(combined)
-
