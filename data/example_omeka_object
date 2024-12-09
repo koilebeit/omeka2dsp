@@ -1,0 +1,45 @@
+{
+    '@context': 'https://omeka.unibe.ch/api-context',
+    '@id': 'https://omeka.unibe.ch/api/items/10777',
+    '@type': 'o:Item',
+    'o:id': 10777,
+    'o:is_public': True,
+    'o:owner': {
+        '@id': 'https://omeka.unibe.ch/api/users/69',
+        'o:id': 69},
+    'o:resource_class': None,
+    'o:resource_template': {
+        '@id': 'https://omeka.unibe.ch/api/resource_templates/48',
+        'o:id': 48},
+    'o:thumbnail': None,
+    'o:title': 'Die Löblich und wyt berümpt Stat Basel',
+    'thumbnail_display_urls': {
+        'large': 'https://omeka.unibe.ch/files/large/9ec7e6fc95c1514198ca6b3cb46a128d60f0ecc1.jpg',
+        'medium': 'https://omeka.unibe.ch/files/medium/9ec7e6fc95c1514198ca6b3cb46a128d60f0ecc1.jpg',
+        'square': 'https://omeka.unibe.ch/files/square/9ec7e6fc95c1514198ca6b3cb46a128d60f0ecc1.jpg'},
+    'o:created': {
+        '@value': '2024-05-15T11:13:22+00:00',
+        '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+    'o:modified': {
+        '@value': '2024-10-10T13:57:49+00:00',
+        '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'},
+    'o:media': [
+        {'@id': 'https://omeka.unibe.ch/api/media/10778', 'o:id': 10778}],
+    'o:item_set': [
+        {'@id': 'https://omeka.unibe.ch/api/item_sets/10780', 'o:id': 10780}],
+    'o:site': [],
+    'dcterms:identifier': [
+        {'type': 'literal', 'property_id': 10, 'property_label': 'Identifier', 'is_public': True, '@value': 'abb10039'}],
+    'dcterms:title': [
+        {'type': 'literal', 'property_id': 1, 'property_label': 'Title', 'is_public': True, '@value': 'Die Löblich und wyt berümpt Stat Basel'}],
+    'dcterms:subject': [
+        {'type': 'customvocab:13', 'property_id': 3, 'property_label': 'Subject', 'is_public': True, '@value': 'Stadt', '@language': 'de'}],
+    'dcterms:description': [
+        {'type': 'literal', 'property_id': 4, 'property_label': 'Description', 'is_public': True, '@value': 'Die Karte zeigt Basel als befestigte Grenzstadt (rechts) sowie ihre geografische Lage zwischen dem Breisgau, dem Sundgau und den eidgenössischen Gebieten (links).'}],
+    'dcterms:temporal': [
+        {'type': 'customvocab:14', 'property_id': 41, 'property_label': 'Temporal Coverage', 'is_public': True, '@value': 'Frühe Neuzeit', '@language': 'de'}],
+    'dcterms:language': [
+        {'type': 'valuesuggest:lc:iso6392', 'property_id': 12, 'property_label': 'Language', 'is_public': True, '@value': 'de'}],
+    'dcterms:isPartOf': [
+        {'type': 'literal', 'property_id': 33, 'property_label': 'Is Part Of', 'is_public': True, '@value': 'Burghartz, Susanna (Hg,): Aufbrüche, Krisen, Transformationen. 1510-1790, Basel 2024 (Stadt.Geschichte.Basel 4).'}]
+}
