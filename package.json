@@ -1,9 +1,9 @@
 {
-	"name": "sgb_data",
-	"description": "This repository contains files and workflows for the quality control and archiving of the research data of Stadt.Geschichte.Basel",
+	"name": "omeka2dsp",
+	"description": "This project contains the data model for the long-term preservation of the research data of [Stadt.Geschichte.Basel](https://stadtgeschichtebasel.ch/) on the [DaSCH Service Platform (DSP)](https://www.dasch.swiss/plattform-characteristics) and the necessary scripts to transfer the research data from omeka to the DSP.",
 	"author": "Nico Görlich",
 	"version": "0.0.1",
-	"url": "https://github.com/koilebeit/sgb_data/issues",
+	"url": "https://github.com/koilebeit/omeka2dsp/issues",
 	"license": "AGPL-3.0",
 	"scripts": {
 		"check": "prettier --ignore-path .gitignore --check . '!{CODE_OF_CONDUCT.md,LICENSE.md,_layouts/default.html}'",

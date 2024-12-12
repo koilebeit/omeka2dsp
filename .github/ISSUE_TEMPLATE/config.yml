@@ -1,8 +1,8 @@
 contact_links:
-  - name: Are you looking for documentation on sgb_data?
-    url: https://koilebeit.github.io/sgb_data
-    about: Please see the documentation for sgb_data on its GitHub Pages page.
-  - name: Do want to discuss sgb_data with the community?
-    url: https://github.com/koilebeit/sgb_data/discussions
-    about: Please see the discussions page for sgb_data.
+  - name: Are you looking for documentation on omeka2dsp?
+    url: https://koilebeit.github.io/omeka2dsp
+    about: Please see the documentation for omeka2dsp on its GitHub Pages page.
+  - name: Do want to discuss omeka2dsp with the community?
+    url: https://github.com/koilebeit/omeka2dsp/discussions
+    about: Please see the discussions page for omeka2dsp.
 blank_issues_enabled: true
